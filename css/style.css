@@ -509,8 +509,33 @@ footer {
    UTILITIES & SERVICES PAGE
    ================================== */
 .text-center { text-align: center; }
+.mb-lg { margin-bottom: var(--spacing-lg); }
 .mt-lg { margin-top: var(--spacing-lg); }
+.pb-xxl { padding-bottom: var(--spacing-xxl); }
 .bg-alt { background-color: var(--color-bg-alt); }
+
+/* Editorial Text Block para que la vista descanse */
+.text-block-readable {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+/* Capitular clásica para inicio de secciones de lectura (Dropcap) */
+.dropcap::first-letter {
+  font-family: var(--font-headings);
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-arrow-bot);
+  float: left;
+  margin: 0 0.5rem -0.2rem 0;
+}
+
+/* Borde de acento visual corporativo */
+.border-left-accent {
+  padding-left: 2rem;
+  border-left: 3px solid var(--color-arrow-mid);
+}
 
 .page-header {
   padding: var(--spacing-xxl) 0;
