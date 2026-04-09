@@ -308,10 +308,6 @@ header {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  position: sticky;
-  top: 80px; /* Offset para respetar el header principal */
-  z-index: 90; /* Por debajo del header de nav (1000) pero por encima de las cards */
-  background-color: var(--color-bg-alt); /* Fondo sólido para que no se traslapen las tarjetas debajo */
   padding: 2rem 0;
 }
 
@@ -914,10 +910,6 @@ textarea.form-control {
 
   .services-grid {
     grid-template-columns: 1fr;
-  }
-
-  .section-header {
-    position: static; /* Desactivar sticky en pantallas muy pequeñas */
   }
 }
 
