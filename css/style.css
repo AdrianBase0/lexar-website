@@ -59,6 +59,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   color: var(--color-base-dark);
   line-height: 1.2;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 a {
@@ -511,6 +513,15 @@ footer {
     font-size: 2.25rem;
   }
 
+  .section-header h2,
+  .about-text h2 {
+    font-size: 1.75rem; /* Achicamos los H2 para móviles */
+  }
+
+  .cta-banner h2 {
+    font-size: 1.5rem;
+  }
+
   .footer-container {
     flex-direction: column;
     text-align: center;
@@ -521,3 +532,4 @@ footer {
     gap: var(--spacing-sm);
   }
 }
+
