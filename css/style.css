@@ -543,37 +543,61 @@ footer {
 }
 
 .form-group {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.25rem;
 }
 
-.form-label {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: var(--color-base-dark);
+.floating-group {
+  position: relative;
+  margin-top: 1.5rem;
 }
 
 .form-control {
   width: 100%;
-  padding: 0.85rem 1rem;
+  padding: 0.5rem 0;
   font-family: var(--font-body);
-  border: 1px solid #ddd;
-  border-radius: var(--radius-sm);
-  background: #fdfdfd;
-  font-size: 1rem;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-bottom: 1px solid #aaa;
+  background: transparent;
+  font-size: 1.05rem;
+  color: var(--color-base-dark);
+  transition: border-bottom-color 0.3s ease;
 }
 
 .form-control:focus {
   outline: none;
-  border-color: var(--color-arrow-bot);
-  box-shadow: 0 0 0 3px rgba(210, 139, 70, 0.2);
-  background: var(--color-bg-light);
+  border-bottom: 2px solid var(--color-arrow-bot);
 }
 
 textarea.form-control {
   resize: vertical;
-  min-height: 150px;
+  min-height: 80px;
+}
+
+.form-label {
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  font-size: 1rem;
+  color: #666;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Animación Flotante: Activa on focus, text entered, u obligatoria para select */
+.form-control:focus ~ .form-label,
+.form-control:not(:placeholder-shown) ~ .form-label,
+.select-label {
+  top: -1.2rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-arrow-bot);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.form-control:not(:focus):not(:placeholder-shown) ~ .form-label,
+.form-control:not(:focus) ~ .select-label {
+  color: #777; /* Se queda oscuro si pierde el focus pero hay texto */
 }
 
 .checkbox-group {
