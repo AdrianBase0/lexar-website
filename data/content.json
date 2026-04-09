@@ -1,0 +1,156 @@
+{
+  "global": {
+    "nombre_firma": "Advance Lexar",
+    "lema": "Consultoría Estratégica Concursal",
+    "footer": {
+      "descripcion": "[TEXTO CORTO FOOTER DESCRIPCION AQUI]",
+      "copyright": "© 2026 Advance Lexar. Todos los derechos reservados."
+    },
+    "contacto_rapido": {
+      "email": "info@advancelexar.com",
+      "telefono": "[TELÉFONO AUN NO DEFINIDO]",
+      "direccion": "[DIRECCIÓN AUN NO DEFINIDA]"
+    }
+  },
+  "nav_links": [
+    { "label": "Inicio", "url": "index.php" },
+    { "label": "Servicios", "url": "servicios.php" },
+    { "label": "Sobre Nosotros", "url": "sobre-nosotros.php" },
+    { "label": "Contacto", "url": "contacto.php" }
+  ],
+  "pages": {
+    "index": {
+      "seo": {
+        "titulo": "Inicio | Advance Lexar - Consultoría Estratégica",
+        "descripcion": "Advance Lexar: Consultoría Estratégica y gestión empresarial. Optimizando procesos con excelencia y rigor técnico. (CNAE 7022)"
+      },
+      "hero": {
+        "titulo": "[TITULO HERO PRINCIPAL AQUI]",
+        "subtitulo": "[SUBTITULO/VALOR DIFERENCIAL AQUI]",
+        "cta_principal": "Solicitar asesoramiento",
+        "cta_secundario": "Ver servicios"
+      },
+      "secciones": {
+        "servicios_intro": {
+          "badge": "Áreas de Práctica",
+          "titulo": "Servicios de Consultoría",
+          "descripcion": "[TEXTO INTRODUCCION SERVICIOS AQUI]"
+        },
+        "nosotros_resumen": {
+          "badge": "Nuestra Firma",
+          "titulo": "[TITULO SECCION NOSOTROS AQUI]",
+          "parrafo_1": "[TEXTO LARGO FILOSOFIA Y RIGOR CORPORATIVO AQUI PARRAFO 1]",
+          "parrafo_2": "[TEXTO LARGO FILOSOFIA Y RIGOR CORPORATIVO AQUI PARRAFO 2]"
+        }
+      }
+    },
+    "servicios": {
+      "seo": {
+        "titulo": "Servicios | Advance Lexar - Consultoría Estratégica",
+        "descripcion": "Soluciones personalizadas en consultoría legal, cumplimiento normativo, estrategia económica y gestión inmobiliaria."
+      },
+      "cabecera": {
+        "badge": "Áreas de Práctica",
+        "titulo": "Catálogo de Servicios",
+        "subtitulo": "[SUBTITULO DESCRIPTIVO DE SERVICIOS AQUI]"
+      },
+      "items": {
+        "legal": {
+          "titulo": "Consultoría Legal y Cumplimiento Normativo",
+          "parrafo_1": "[TEXTO EXTENSO SERVICIO LEGAL PARRAFO 1 AQUI...]",
+          "parrafo_2": "[TEXTO EXTENSO SERVICIO LEGAL PARRAFO 2 AQUI...]",
+          "bullets": [
+            "[SERVICIO O ASPECTO LEGAL 1]",
+            "[SERVICIO O ASPECTO LEGAL 2]",
+            "[SERVICIO O ASPECTO LEGAL 3]"
+          ]
+        },
+        "estrategica": {
+          "titulo": "Consultoría Estratégica y Económica",
+          "parrafo_1": "[TEXTO EXTENSO SERVICIO ECONOMICO PARRAFO 1 AQUI...]",
+          "parrafo_2": "[TEXTO EXTENSO SERVICIO ECONOMICO PARRAFO 2 AQUI...]",
+          "bullets": [
+            "[SERVICIO O ASPECTO ECONOMICO 1]",
+            "[SERVICIO O ASPECTO ECONOMICO 2]",
+            "[SERVICIO O ASPECTO ECONOMICO 3]"
+          ]
+        },
+        "inmobiliaria": {
+          "titulo": "Gestión Inmobiliaria Corporativa",
+          "parrafo_1": "[TEXTO EXTENSO SERVICIO INMOBILIARIA PARRAFO 1 AQUI...]",
+          "parrafo_2": "[TEXTO EXTENSO SERVICIO INMOBILIARIA PARRAFO 2 AQUI...]",
+          "bullets": [
+            "[SERVICIO O ASPECTO INMOBILIARIO 1]",
+            "[SERVICIO O ASPECTO INMOBILIARIO 2]",
+            "[SERVICIO O ASPECTO INMOBILIARIO 3]"
+          ]
+        }
+      }
+    },
+    "sobre_nosotros": {
+      "seo": {
+        "titulo": "Sobre Nosotros | Advance Lexar - Filosofía y Modelo",
+        "descripcion": "Conozca nuestra historia corporativa, nuestros valores fundacionales y nuestro estricto modelo de intermediación profesional."
+      },
+      "cabecera": {
+        "badge": "Nuestra Firma",
+        "titulo": "Filosofía y Excelencia",
+        "subtitulo": "[SUBTITULO CABECERA FILOSOFIA AQUI]"
+      },
+      "historia": {
+        "titulo": "[TITULO PRINCIPAL QUÍENES SOMOS AQUI]",
+        "parrafo_1": "[TEXTO EXTENSO HISTORIA Y FUNDACION PARRAFO 1 AQUI...]",
+        "parrafo_2": "[TEXTO EXTENSO HISTORIA Y FUNDACION PARRAFO 2 AQUI...]",
+        "parrafo_3": "[TEXTO EXTENSO HISTORIA Y FUNDACION PARRAFO 3 AQUI...]"
+      },
+      "modelo": {
+        "titulo": "Modelo de Coordinación Profesional",
+        "subtitulo": "[SUBTITULO MODELO LEGAL Y OPERATIVO]",
+        "parrafo_1": "[TEXTO EXPLICATIVO COORDINACION Y LEY DE SOCIEDADES PROFESIONALES PARRAFO 1 AQUI...]",
+        "parrafo_2": "[TEXTO EXPLICATIVO ACCION INTERDISCIPLINAR PARRAFO 2 AQUI...]",
+        "compromisos": [
+          "[VALOR O PILAR FUNDAMENTAL DE LA FIRMA 1]",
+          "[VALOR O PILAR DE MAXIMA RIGUROSIDAD 2]",
+          "[TERCER COMPONENTE DE NUESTRO ADN PROFESIONAL 3]",
+          "[ASPECTO DE CONFIDENCIALIDAD O TRATO EXCLUSIVO 4]"
+        ]
+      }
+    },
+    "contacto": {
+      "seo": {
+        "titulo": "Contacto | Advance Lexar - Consultoría Estratégica",
+        "descripcion": "Póngase en contacto con Advance Lexar para recibir asesoramiento estratégico, consultoría legal y gestión corporativa rigurosa."
+      },
+      "cabecera": {
+        "badge": "Soporte Técnico",
+        "titulo": "Contacto y Asistencia",
+        "subtitulo": "Estamos a su entera disposición para resolver cualquier solicitud estratégica."
+      },
+      "info_panel": {
+        "titulo": "Advance Lexar",
+        "descripcion": "Consultoría de alto rendimiento enfocada a resultados. Agende una reunión presencial o remota con nuestros gestores."
+      },
+      "formulario": {
+        "titulo": "Envíenos un comunicado",
+        "subtitulo": "Complete el formulario y el departamento designado evaluará su situación en las primeras 48 horas operativas."
+      }
+    }
+  },
+  "legal": {
+    "aviso_legal": {
+      "razon_social": "[RAZON SOCIAL AQUI]",
+      "nif": "[NIF AQUI]",
+      "direccion": "[DIRECCION AQUI]",
+      "email": "[EMAIL LEGAL AQUI]",
+      "datos_registrales": "[TOMO FOLIO HOJA AQUI]"
+    },
+    "privacidad": {
+      "dpo_contacto": "[DIRECCION Y CORREO DPO]",
+      "plazo_conservacion": "[PLAZO LEGAL AQUI]",
+      "email_arco": "[CORREO DPO AQUI]"
+    },
+    "cookies": {
+      "detalles_analisis": "[ESPECIFICAR AQUI COOKIES DE TERCEROS]"
+    }
+  }
+}

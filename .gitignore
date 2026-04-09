@@ -28,6 +28,7 @@ yarn-error.log*
 .env.local
 .env.*.local
 config.php # (Si decides guardar aquí claves SMTP fuera del versionado)
+contenidos_advance_lexar.md
 
 # Archivos del sistema operativo
 .DS_Store
