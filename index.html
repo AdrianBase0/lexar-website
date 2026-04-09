@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio | Advance Lexar - Consultoría</title>
-    <meta name="description" content="Advance Lexar: Consultoría Estratégica Concursal y gestión empresarial. Optimizando procesos con excelencia y rigor técnico.">
+    <title>Inicio | Advance Lexar - Consultoría Estratégica</title>
+    <meta name="description" content="Advance Lexar: Consultoría Estratégica y gestión empresarial. Optimizando procesos con excelencia y rigor técnico. (CNAE 7022)">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Precargar imagen LCP -->
+    <link rel="preload" as="image" href="https://via.placeholder.com/1200x600/3b2c24/e5ce83?text=[IMAGEN_HERO_1200x600]">
 </head>
 <body>
     <header>
         <nav class="nav-container">
             <a href="index.html" class="logo">Advance<span>Lexar</span></a>
             <ul class="nav-links">
-                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="index.html" class="active" aria-current="page">Inicio</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
@@ -21,19 +23,104 @@
     </header>
 
     <main>
-        <section class="construction-container">
-            <div class="badge">Próximamente</div>
-            <h1>Consultoría Estratégica Empresarial</h1>
-            <p>Estamos desarrollando una plataforma corporativa a la medida de nuestros altos estándares. Advance Lexar, tu firma de gestión y estrategia de confianza, estará online muy pronto.</p>
+        <!-- SECCIÓN HERO -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>[TITULO_PRINCIPAL_AQUI_MAX_6_PALABRAS]</h1>
+                <p class="hero-subtitle">[SUBTITULO_PROPUESTA_DE_VALOR_AQUI_DESCRIPTIVO_Y_CERCANO]</p>
+                <div class="hero-actions">
+                    <a href="contacto.html" class="btn btn-primary">[TEXTO_BOTON_ACCION_PRINCIPAL]</a>
+                    <a href="servicios.html" class="btn btn-outline">[TEXTO_BOTON_SECUNDARIO]</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="https://via.placeholder.com/1200x600/3b2c24/e5ce83?text=[IMAGEN_HERO_1200x600]" alt="[DESCRIPCION_IMAGEN_HERO_ACCESIBILIDAD]" width="1200" height="600" class="hero-image">
+            </div>
+        </section>
+
+        <!-- SECCIÓN ÁREAS DE PRÁCTICA -->
+        <section class="services-overview">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Áreas de Práctica</h2>
+                    <p>[TEXTO_INTRODUCCION_SERVICIOS_AQUI]</p>
+                </header>
+                <div class="services-grid">
+                    
+                    <!-- Tarjeta 1: Consultoría Legal -->
+                    <article class="service-card">
+                        <div class="card-icon" aria-hidden="true">
+                            <img src="https://via.placeholder.com/64x64/f9f8f6/7d4334?text=Icon" alt="" width="64" height="64" loading="lazy">
+                        </div>
+                        <h3>Consultoría Legal y Cumplimiento</h3>
+                        <p>[TEXTO_BREVE_DESCRIPCION_LEGAL_AQUI]</p>
+                        <a href="servicios.html#legal" class="card-link" aria-label="Saber más sobre Consultoría Legal">Saber más &rarr;</a>
+                    </article>
+
+                    <!-- Tarjeta 2: Estratégica y Económica -->
+                    <article class="service-card">
+                        <div class="card-icon" aria-hidden="true">
+                            <img src="https://via.placeholder.com/64x64/f9f8f6/7d4334?text=Icon" alt="" width="64" height="64" loading="lazy">
+                        </div>
+                        <h3>Estrategia y Economía</h3>
+                        <p>[TEXTO_BREVE_DESCRIPCION_ECONOMICA_AQUI]</p>
+                        <a href="servicios.html#estrategica" class="card-link" aria-label="Saber más sobre Estrategia y Economía">Saber más &rarr;</a>
+                    </article>
+
+                    <!-- Tarjeta 3: Gestión Inmobiliaria -->
+                    <article class="service-card">
+                        <div class="card-icon" aria-hidden="true">
+                            <img src="https://via.placeholder.com/64x64/f9f8f6/7d4334?text=Icon" alt="" width="64" height="64" loading="lazy">
+                        </div>
+                        <h3>Gestión Inmobiliaria</h3>
+                        <p>[TEXTO_BREVE_DESCRIPCION_INMOBILIARIA_AQUI]</p>
+                        <a href="servicios.html#inmobiliaria" class="card-link" aria-label="Saber más sobre Gestión Inmobiliaria">Saber más &rarr;</a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN SOBRE NOSOTROS (RESUMEN) -->
+        <section class="about-summary">
+            <div class="container grid-2-columns">
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/600x800/d28b46/ffffff?text=[IMAGEN_SOBRE_NOSOTROS_600x800]" alt="[DESCRIPCION_IMAGEN_FILOSOFIA]" width="600" height="800" loading="lazy">
+                </div>
+                <div class="about-text">
+                    <span class="badge">Nuestra Firma</span>
+                    <h2>[TITULO_SECCION_NOSOTROS_AQUI]</h2>
+                    <p>[TEXTO_LARGO_FILOSOFIA_Y_RIGOR_CORPORATIVO_AQUI_PARRAFO_1]</p>
+                    <p>[TEXTO_LARGO_FILOSOFIA_Y_RIGOR_CORPORATIVO_AQUI_PARRAFO_2]</p>
+                    <a href="sobre-nosotros.html" class="btn btn-outline">Conoce nuestra historia</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN CTA FINAL -->
+        <section class="cta-banner">
+            <div class="container">
+                <h2>[TITULO_LLAMADA_ACCION_FINAL]</h2>
+                <p>[SUBTITULO_LLAMADA_ACCION_FINAL]</p>
+                <a href="contacto.html" class="btn btn-primary">Contáctanos</a>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Advance Lexar. Todos los derechos reservados.</p>
-        <div class="footer-links">
-            <a href="aviso-legal.html">Aviso Legal</a>
-            <a href="politica-privacidad.html">Política de Privacidad</a>
-            <a href="politica-cookies.html">Política de Cookies</a>
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <span class="logo footer-logo">Advance<span>Lexar</span></span>
+                <p>[TEXTO_CORTO_FOOTER_DESCRIPCION_AQUI]</p>
+            </div>
+            <div class="footer-links">
+                <a href="aviso-legal.html">Aviso Legal</a>
+                <a href="politica-privacidad.html">Política de Privacidad</a>
+                <a href="politica-cookies.html">Política de Cookies</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Advance Lexar. Todos los derechos reservados.</p>
         </div>
     </footer>
 
