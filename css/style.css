@@ -34,6 +34,25 @@
   box-sizing: border-box;
 }
 
+/* Skip link de Accesibilidad (A11y WCAG 2.1 - Navegación por teclado) */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  background: var(--color-arrow-bot);
+  color: var(--color-bg-light);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  z-index: 9999;
+  transition: top 0.2s ease;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
 body {
   font-family: var(--font-body);
   background-color: var(--color-bg-light);
@@ -485,6 +504,13 @@ footer {
   color: var(--color-bg-light);
 }
 
+/* Accesibilidad: focus visible en links del footer */
+.footer-links a:focus-visible {
+  outline: 2px solid var(--color-arrow-mid);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
 .footer-bottom {
   text-align: center;
   padding: var(--spacing-md);
@@ -568,6 +594,11 @@ footer {
   font-size: 1.05rem;
   color: var(--color-base-dark);
   transition: border-bottom-color 0.3s ease;
+  /* Select cross-browser reset */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
 }
 
 .form-control:focus {
@@ -843,6 +874,8 @@ textarea.form-control {
 /* ==================================
    RESPONSIVE DESIGN
    ================================== */
+
+/* Tablet grande / Desktop pequeño */
 @media (max-width: 900px) {
   .grid-2-columns {
     grid-template-columns: 1fr;
@@ -851,11 +884,47 @@ textarea.form-control {
   .about-image {
     order: -1;
   }
+
+  /* Contact grid colapsa antes */
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .contact-info {
+    padding: 2.5rem;
+  }
+
+  /* Service sections necesitan menos padding en tablet */
+  .service-detail {
+    padding: var(--spacing-xl) 0;
+  }
 }
 
+/* Tablet pequeña / Móvil grande */
+@media (max-width: 600px) {
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions .btn {
+    text-align: center;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-header {
+    position: static; /* Desactivar sticky en pantallas muy pequeñas */
+  }
+}
+
+/* Móvil estándar */
 @media (max-width: 768px) {
   body {
-    font-size: 0.95rem; /* Ajuste global para mejorar lectura en móviles */
+    font-size: 0.95rem;
   }
 
   .menu-toggle {
@@ -864,7 +933,6 @@ textarea.form-control {
 
   .nav-container {
     padding: 1rem 1.5rem;
-    /* Flex-direction se mantiene en 'row' natural para que Logo y Menú convivan a los lados */
   }
   
   .nav-links {
@@ -891,8 +959,6 @@ textarea.form-control {
     padding: var(--spacing-xl) 1.5rem var(--spacing-md);
   }
 
-  /* Ya no necesitamos achicar manualmente los H2 porque clamp() lo hace automáticamente! */
-
   .footer-container {
     flex-direction: column;
     text-align: center;
@@ -910,5 +976,10 @@ textarea.form-control {
 
   .contact-info {
     padding: 2rem;
+  }
+
+  /* Formulario: primera columna completa en móvil */
+  .contact-form-wrapper {
+    padding: 0;
   }
 }
