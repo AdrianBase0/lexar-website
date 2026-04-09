@@ -188,7 +188,27 @@ header {
   align-items: center;
 }
 
+/* Logo imagen real */
 .logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.logo-img {
+  height: 52px;
+  width: auto;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.logo:hover .logo-img {
+  opacity: 0.85;
+}
+
+/* Fallback texto (para páginas legales sin logo img) */
+.logo-text {
   font-family: var(--font-headings);
   font-size: 1.8rem;
   font-weight: 700;
@@ -197,7 +217,7 @@ header {
   letter-spacing: 1px;
 }
 
-.logo span {
+.logo-text span {
   color: var(--color-arrow-bot);
 }
 
@@ -235,6 +255,11 @@ header {
 .nav-links a:hover::after,
 .nav-links a.active::after {
   width: 100%;
+}
+
+/* Header con sombra progresiva al scroll (aplicada via JS: .scrolled) */
+header.scrolled {
+  box-shadow: 0 4px 20px rgba(59, 44, 36, 0.12);
 }
 
 /* ==================================
@@ -303,6 +328,7 @@ header {
 }
 
 .section-header {
+  position:inherit;
   text-align: center;
   margin-bottom: var(--spacing-xl);
   max-width: 100%;
@@ -973,5 +999,183 @@ textarea.form-control {
   /* Formulario: primera columna completa en móvil */
   .contact-form-wrapper {
     padding: 0;
+  }
+}
+
+/* ==================================
+   ANIMACIONES DE ENTRADA (Scroll Reveal)
+   ================================== */
+
+/* Estado inicial: elementos invisibles antes de entrar en viewport */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Variantes de dirección */
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-left.visible,
+.reveal-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Stagger: retraso secuencial en hijos de un grid */
+.stagger-children > *:nth-child(1) { transition-delay: 0ms; }
+.stagger-children > *:nth-child(2) { transition-delay: 100ms; }
+.stagger-children > *:nth-child(3) { transition-delay: 200ms; }
+.stagger-children > *:nth-child(4) { transition-delay: 300ms; }
+
+/* Animación hero al cargar página */
+@keyframes heroFadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero-content h1 {
+  animation: heroFadeUp 0.9s ease both;
+  animation-delay: 0.1s;
+}
+
+.hero-content .hero-subtitle {
+  animation: heroFadeUp 0.9s ease both;
+  animation-delay: 0.25s;
+}
+
+.hero-content .hero-actions {
+  animation: heroFadeUp 0.9s ease both;
+  animation-delay: 0.4s;
+}
+
+/* ==================================
+   MEJORAS INTERACTIVAS DE CARDS
+   ================================== */
+
+/* Borde de acento en hover de service-card */
+.service-card {
+  border-bottom: 3px solid transparent;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(59, 44, 36, 0.1);
+  border-bottom-color: var(--color-arrow-bot);
+}
+
+/* Icono de la tarjeta se mueve levemente en hover */
+.service-card:hover .card-icon {
+  transform: scale(1.08);
+  transition: transform 0.3s ease;
+}
+
+/* ==================================
+   SEPARADORES DECORATIVOS
+   ================================== */
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: var(--spacing-xl) auto;
+  max-width: 200px;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--color-arrow-mid);
+  opacity: 0.6;
+}
+
+.divider-icon {
+  width: 10px;
+  height: 10px;
+  background: var(--color-arrow-bot);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ==================================
+   LOGO EN FOOTER (con el icono cuadrado)
+   ================================== */
+.footer-logo-img {
+  height: 40px;
+  width: auto;
+  display: block;
+  margin-bottom: var(--spacing-sm);
+  opacity: 0.85;
+}
+
+/* ==================================
+   MEJORAS HOVER EN BOTONES
+   ================================== */
+.btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.08);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.btn:hover::before {
+  opacity: 1;
+}
+
+/* Efecto ripple subtle en btn-primary */
+.btn-primary:active {
+  transform: scale(0.98);
+}
+
+/* ==================================
+   NÚMERO / ESTADÍSTICAS en CTA (futuro)
+   ================================== */
+.stat-number {
+  font-family: var(--font-headings);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  color: var(--color-arrow-mid);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.7;
+  margin-top: 0.25rem;
+}
+
+/* ==================================
+   LOGO MÓVIL: Reducir tamaño del logo en nav móvil
+   ================================== */
+@media (max-width: 768px) {
+  .logo-img {
+    height: 40px;
   }
 }

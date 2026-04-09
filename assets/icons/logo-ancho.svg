@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 500 175" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-7,0)">
+        <g transform="matrix(1,0,0,1,-34.636676,-6.802128)">
+            <clipPath id="_clip1">
+                <path d="M138.604,53.843L197.235,53.843L187.335,-5.768L31.637,-17.363L38.814,116.25L49.857,197.964L166.354,198.516L209.46,166.572L209.46,140.062L138.604,140.062L138.604,53.843Z"/>
+            </clipPath>
+            <g clip-path="url(#_clip1)">
+                <circle cx="138.604" cy="96.952" r="61.572" style="fill:rgb(235,235,235);fill-opacity:0;stroke:rgb(54,36,23);stroke-width:9.95px;"/>
+            </g>
+        </g>
+        <g transform="matrix(0.966576,0,0,1,-17.409923,2.650169)">
+            <clipPath id="_clip2">
+                <path d="M123.763,35.115C142.93,35.115 208.555,19.198 217.687,34.575C222.33,42.394 250,74.896 250,84.641C250,95.845 205.702,141.674 205.702,141.674C205.702,141.674 141.472,139.885 123.763,139.885C94.851,139.885 71.378,116.412 71.378,87.5C71.378,58.588 94.851,35.115 123.763,35.115Z"/>
+            </clipPath>
+            <g clip-path="url(#_clip2)">
+                <g transform="matrix(1.367669,0,0,1,-46.214489,-8.001893)">
+                    <path d="M85.98,71.626L85.98,61.397L172.099,61.397L172.099,51.899L183.153,66.512L172.099,81.125L172.099,71.626L85.98,71.626Z" style="fill:rgb(127,61,43);"/>
+                </g>
+                <g transform="matrix(1.387273,0,0,0.978843,-59.464571,48.445591)">
+                    <path d="M85.98,71.626L85.98,61.397L172.486,61.397L172.486,51.899L183.153,66.512L172.486,81.125L172.486,71.626L85.98,71.626Z" style="fill:rgb(204,139,60);stroke:rgb(204,139,60);stroke-width:0.85px;"/>
+                </g>
+                <g transform="matrix(1.833252,0,0,0.990252,-109.615307,18.912484)">
+                    <path d="M85.98,71.626L85.98,61.397L174.987,61.397L174.987,51.899L183.153,66.512L174.987,81.125L174.987,71.626L85.98,71.626Z" style="fill:rgb(232,216,138);"/>
+                </g>
+            </g>
+        </g>
+    </g>
+    <g transform="matrix(1,0,0,1,-2,2)">
+        <g transform="matrix(1,0,0,1,15.547695,4.519792)">
+            <g transform="matrix(27.083333,0,0,27.083333,466.560566,72.955394)">
+            </g>
+            <text x="212.654px" y="72.955px" style="font-family:'Lora-Regular', 'Lora';font-size:27.083px;fill:rgb(54,36,23);">A<tspan x="232.533px 255.283px 274.702px 294.581px 318.008px 339.865px 359.636px 369.683px 388.263px 408.033px 429.673px 449.552px " y="72.955px 72.955px 72.955px 72.955px 72.955px 72.955px 72.955px 72.955px 72.955px 72.955px 72.955px 72.955px ">DVANCE LEXAR</tspan></text>
+        </g>
+        <g transform="matrix(1,0,0,0.108156,-6.123419,76.076527)">
+            <rect x="230.204" y="79.549" width="261.986" height="4.225"/>
+        </g>
+        <g transform="matrix(1,0,0,1,8.501003,1.683073)">
+            <g transform="matrix(11.053011,0,0,11.053011,460.043097,101.896379)">
+            </g>
+            <text x="233.534px" y="101.896px" style="font-family:'Lato-Regular', 'Lato', sans-serif;font-size:11.053px;">C<tspan x="243.05px 251.141px 259.232px 265.974px 274.065px 278.84px 284.908px 292.999px 299.399px 304.174px 311.723px 315.801px 324.168px 330.911px 336.979px 343.169px 350.718px 356.786px 364.523px 372.116px 376.891px 383.998px 391.548px 395.626px 405.143px 413.234px 421.324px 428.431px 436.522px 442.922px 449.664px 457.214px " y="101.896px 101.896px 101.896px 101.896px 101.896px 101.896px 101.896px 101.896px 101.896px 101.896px 101.896px 101.896px 101.896px 101.896px 101.896px 101.896px 101.896px 101.896px 101.896px 101.896px 101.896px 101.896px 101.896px 101.896px 101.896px 101.896px 101.896px 101.896px 101.896px 101.896px 101.896px 101.896px ">onsultoría Estratégica Concursal</tspan></text>
+        </g>
+    </g>
+</svg>
