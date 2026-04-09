@@ -140,6 +140,14 @@ a:hover {
   border: 1px solid var(--color-arrow-mid);
 }
 
+/* Accesibilidad: Variación de contraste para fondos oscuros */
+.page-header .badge,
+.hero .badge {
+  color: var(--color-arrow-mid);
+  background: rgba(229, 206, 131, 0.1);
+  border-color: rgba(229, 206, 131, 0.4);
+}
+
 /* ==================================
    HEADER & NAVIGATION
    ================================== */
