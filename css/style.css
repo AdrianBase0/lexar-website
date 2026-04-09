@@ -506,8 +506,7 @@ footer {
 
 .page-header {
   padding: var(--spacing-xxl) 0;
-  background-size: cover;
-  background-position: center;
+  background-color: var(--color-base-dark);
   color: var(--color-bg-light);
 }
 
