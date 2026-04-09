@@ -92,12 +92,14 @@
                         <!-- CAMPOS REALES -->
                         <div class="form-group floating-group">
                             <input type="text" id="full_name" name="full_name" class="form-control" placeholder=" " required minlength="3">
-                            <label for="full_name" class="form-label">Nombre Completo o Razón Social *</label>
+                            <label for="full_name" class="form-label">Nombre Completo Titular *</label>
+                            <span class="error-text" id="error_full_name"></span>
                         </div>
 
                         <div class="form-group floating-group">
                             <input type="email" id="email_address" name="email_address" class="form-control" placeholder=" " required>
                             <label for="email_address" class="form-label">Correo Electrónico Corporativo *</label>
+                            <span class="error-text" id="error_email_address"></span>
                         </div>
 
                         <div class="form-group floating-group">
@@ -109,18 +111,23 @@
                                 <option value="otros">Otros asuntos</option>
                             </select>
                             <label for="subject" class="form-label select-label">Asunto (Departamento) *</label>
+                            <span class="error-text" id="error_subject"></span>
                         </div>
 
                         <div class="form-group floating-group">
                             <textarea id="consult_message" name="consult_message" class="form-control" placeholder=" " required minlength="10"></textarea>
                             <label for="consult_message" class="form-label">Detalle de su Consulta *</label>
+                            <span class="error-text" id="error_consult_message"></span>
                         </div>
 
-                        <div class="form-group checkbox-group">
-                            <input type="checkbox" id="privacy_policy" name="privacy_policy" required>
-                            <label for="privacy_policy">
-                                He leído y acepto expresamente la <a href="politica-privacidad.html" style="color:var(--color-arrow-bot);text-decoration:underline;">Política de Privacidad</a> y el tratamiento de mis datos de carácter personal conforme al RGPD.*
-                            </label>
+                        <div class="form-group">
+                            <div class="checkbox-group" id="wrapper_privacy_policy">
+                                <input type="checkbox" id="privacy_policy" name="privacy_policy" required>
+                                <label for="privacy_policy">
+                                    He leído y acepto expresamente la <a href="politica-privacidad.html" style="color:var(--color-arrow-bot);text-decoration:underline;">Política de Privacidad</a> y el tratamiento de mis datos de carácter personal conforme al RGPD.*
+                                </label>
+                            </div>
+                            <span class="error-text" id="error_privacy_policy" style="margin-left: 1.5rem;"></span>
                         </div>
 
                         <button type="submit" class="btn btn-primary" id="submit_btn" style="width:100%; margin-top:1rem;">Enviar Comunicado</button>

@@ -5,9 +5,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (contactForm) {
         contactForm.addEventListener("submit", async (e) => {
-            e.preventDefault(); // Regla 07: Prevención estricta nativa JS
+            e.preventDefault();
 
-            // Reset UI
+            // Reset general
+            clearErrors();
             feedbackBox.className = "form-feedback";
             feedbackBox.textContent = "";
             feedbackBox.style.display = "none";
@@ -20,75 +21,121 @@ document.addEventListener("DOMContentLoaded", () => {
             const trapBot = document.getElementById("trap_bot").value;
             const isPrivacyChecked = document.getElementById("privacy_policy").checked;
 
-            // 1. HONEYPOT VALIDATION (Bloqueo agresivo si es robot)
+            // 1. HONEYPOT
             if (trapBot !== "") {
-                // Detener en seco si cayó en la trampa
-                return throwError("Comportamiento sospechoso detectado. Envío anulado.");
+                return throwGlobalError("Comportamiento sospechoso detectado. Envío anulado.");
             }
 
-            // 2. CAMPOS VACÍOS O ESPACIOS
-            if (!rawName || !rawEmail || !rawSubject || !rawMsg) {
-                return throwError("Existen campos obligatorios incompletos o vacíos.");
+            // 2. VALIDACIONES INLINE (Acumulativas)
+            let isFormValid = true;
+
+            if (!rawName) {
+                showFieldError("full_name", "Este campo es obligatorio.");
+                isFormValid = false;
+            } else if (rawName.length < 3) {
+                showFieldError("full_name", "Introduzca al menos 3 caracteres.");
+                isFormValid = false;
             }
 
-            // 3. REGEX PARA EMAIL SEGURO
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(rawEmail)) {
-                return throwError("El formato del correo electrónico ingresado no es válido.");
+            if (!rawEmail) {
+                showFieldError("email_address", "El correo es obligatorio.");
+                isFormValid = false;
+            } else if (!emailRegex.test(rawEmail)) {
+                showFieldError("email_address", "Formato de correo no válido.");
+                isFormValid = false;
             }
 
-            // 4. POLITICA CHECKBOX OBLIGATORIA
+            if (!rawSubject) {
+                showFieldError("subject", "Debe seleccionar un departamento.");
+                isFormValid = false;
+            }
+
+            if (!rawMsg) {
+                showFieldError("consult_message", "El detalle de la consulta es obligatorio.");
+                isFormValid = false;
+            } else if (rawMsg.length < 10) {
+                showFieldError("consult_message", "La longitud mínima es de 10 caracteres.");
+                isFormValid = false;
+            }
+
             if (!isPrivacyChecked) {
-                return throwError("Debe aceptar expresamente la Política de Privacidad para proceder.");
+                showFieldError("privacy_policy", "La aceptación de la política es obligatoria.", true);
+                isFormValid = false;
             }
 
-            // Si llegamos a este punto, la Validacion Frontend fue superada con éxito (100% Client-Side OK).
-            // Estado de "Enviando..."
-            loaderUI(true);
+            // Detener el flujo si hay algún campo marcado en rojo
+            if (!isFormValid) {
+                return;
+            }
 
-            // Preparar FormData para enviar
+            // Si llegamos a este punto, 100% Client-Side OK
+            loaderUI(true);
             const formData = new FormData(contactForm);
 
             try {
-                // LLAMADA AJAX ASÍNCORNA (Fetch API nativa)
                 const response = await fetch(contactForm.getAttribute('action'), {
                     method: 'POST',
                     body: formData,
-                    headers: {
-                        'Accept': 'application/json'
-                    }
+                    headers: { 'Accept': 'application/json' }
                 });
 
                 const data = await response.json();
 
                 if (response.ok && data.status === "success") {
-                    // ÉXITO
                     loaderUI(false);
                     contactForm.reset();
-                    showSuccess(data.message || "Hemos recibido su comunicación correctamente. Nuestro personal de soporte se pondrá en contacto a la mayor brevedad.");
+                    showSuccess(data.message || "Solicitud procesada con éxito.");
                 } else {
-                    // ERROR DEL SERVIDOR (400, 500)
-                    throw new Error(data.message || "Ocurrió un error en el servidor procesando la solicitud.");
+                    throw new Error(data.message || "Error del servidor.");
                 }
 
             } catch (error) {
                 loaderUI(false);
-                throwError("Error de comunicación con el servidor. Inténtelo más tarde. (" + error.message + ")");
+                throwGlobalError("Error de red. Inténtelo más tarde. (" + error.message + ")");
             }
         });
     }
 
-    // Funciones de Ayuda (Alertas DOM sin usar el horrendo alert() bloqueante)
-    function throwError(msg) {
+    // --- Helpers Validation UI --- //
+
+    function clearErrors() {
+        // Remover clases de inputs y checkboxes
+        document.querySelectorAll('.is-invalid').forEach(el => el.classList.remove('is-invalid'));
+        // Vaciar y ocultar labels de error
+        document.querySelectorAll('.error-text').forEach(el => {
+            el.textContent = "";
+            el.classList.remove('active');
+        });
+    }
+
+    function showFieldError(inputId, message, isCheckbox = false) {
+        const inputEl = document.getElementById(inputId);
+        const errorSpan = document.getElementById("error_" + inputId);
+        
+        if (errorSpan) {
+            errorSpan.textContent = message;
+            errorSpan.classList.add("active");
+        }
+        
+        if (inputEl) {
+            if (isCheckbox) {
+                const wrapper = document.getElementById("wrapper_privacy_policy");
+                if (wrapper) wrapper.classList.add("is-invalid");
+            } else {
+                inputEl.classList.add("is-invalid");
+            }
+        }
+    }
+
+    function throwGlobalError(msg) {
         feedbackBox.textContent = msg;
-        feedbackBox.classList.add("error");
-        feedbackBox.style.display = "block";
+        feedbackBox.className = "form-feedback error";
     }
 
     function showSuccess(msg) {
         feedbackBox.textContent = msg;
-        feedbackBox.classList.add("success");
-        feedbackBox.style.display = "block";
+        feedbackBox.className = "form-feedback success";
     }
 
     function loaderUI(isLoading) {

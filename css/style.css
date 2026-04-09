@@ -614,6 +614,38 @@ textarea.form-control {
   cursor: pointer;
 }
 
+.checkbox-group.is-invalid {
+  box-shadow: 0 4px 6px -1px rgba(201, 48, 44, 0.1), 0 2px 4px -1px rgba(201, 48, 44, 0.06);
+  padding: 0.5rem;
+  border-radius: 4px;
+  background: rgba(201, 48, 44, 0.03);
+}
+
+/* Inline Errors */
+.error-text {
+  display: block;
+  font-size: 0.8rem;
+  color: #d13e3e;
+  margin-top: 0.25rem;
+  min-height: 1.2rem;
+  opacity: 0;
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
+.error-text.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.form-control.is-invalid {
+  border-bottom-color: #d13e3e !important;
+}
+
+.form-control.is-invalid ~ .form-label {
+  color: #d13e3e !important;
+}
+
 /* Honeypot Security Field */
 .hp-field {
   display: none !important;
