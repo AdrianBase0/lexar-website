@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap');
+
+:root {
+  /* Paleta de colores Corporativa Advance Lexar */
+  --color-base-dark: #3b2c24; /* Marrón muy oscuro (Textos y bordes) */
+  --color-arrow-top: #7d4334; /* Marrón rojizo (Destacados secundarios) */
+  --color-arrow-mid: #e5ce83; /* Dorado/Mostaza (Hover/Fondos) */
+  --color-arrow-bot: #d28b46; /* Naranja tierra (Llamadas a la acción) */
+  --color-bg-light: #ffffff; /* Blanco */
+  --color-bg-alt: #f9f8f6; /* Blanco roto cálido */
+
+  /* Tipografías */
+  --font-headings: 'Merriweather', Georgia, serif;
+  --font-body: 'Open Sans', Arial, sans-serif;
+
+  /* Espaciados Base */
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+}
+
+/* ==================================
+   RESET & BASE
+   ================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg-alt);
+  color: var(--color-base-dark);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-headings);
+  font-weight: 700;
+  color: var(--color-base-dark);
+  margin-bottom: var(--spacing-md);
+}
+
+a {
+  color: var(--color-arrow-top);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-arrow-bot);
+}
+
+/* ==================================
+   HEADER & NAVIGATION
+   ================================== */
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: var(--color-bg-light);
+  box-shadow: 0 2px 4px rgba(59, 44, 36, 0.1);
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--font-headings);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-base-dark);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: var(--color-arrow-bot);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--color-base-dark);
+  font-weight: 600;
+  font-size: 0.95rem;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--color-arrow-bot);
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--color-arrow-bot);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+/* ==================================
+   MAIN CONTENT & "CONSTRUCTION"
+   ================================== */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-xl) 2rem;
+  background-color: var(--color-bg-alt);
+  text-align: center;
+}
+
+.construction-container {
+  max-width: 700px;
+  padding: var(--spacing-xl);
+  background: var(--color-bg-light);
+  border: 1px solid rgba(59, 44, 36, 0.1);
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(59, 44, 36, 0.05);
+}
+
+.badge {
+  display: inline-block;
+  margin-bottom: var(--spacing-lg);
+  padding: 0.5rem 1.5rem;
+  border-radius: 2px;
+  background: rgba(229, 206, 131, 0.2);
+  color: var(--color-arrow-top);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 1px solid var(--color-arrow-mid);
+}
+
+.construction-container h1 {
+  font-size: 2.5rem;
+  line-height: 1.3;
+  color: var(--color-base-dark);
+}
+
+.construction-container p {
+  color: var(--color-base-dark);
+  opacity: 0.8;
+  font-size: 1.1rem;
+  margin-bottom: var(--spacing-lg);
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background-color: var(--color-arrow-bot);
+  color: var(--color-bg-light);
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-arrow-top);
+  color: var(--color-bg-light);
+}
+
+/* ==================================
+   FOOTER
+   ================================== */
+footer {
+  text-align: center;
+  padding: var(--spacing-lg) 2rem;
+  background-color: var(--color-base-dark);
+  color: var(--color-bg-alt);
+}
+
+.footer-links {
+  margin-top: var(--spacing-sm);
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: var(--color-arrow-mid);
+  font-size: 0.85rem;
+  text-transform: none;
+}
+
+.footer-links a:hover {
+  color: var(--color-bg-light);
+  text-decoration: underline;
+}
+
+footer p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-bottom: var(--spacing-sm);
+}
+
+/* ==================================
+   RESPONSIVE DESIGN
+   ================================== */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .nav-links {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .construction-container {
+    padding: 2rem 1.5rem;
+  }
+
+  .construction-container h1 {
+    font-size: 2rem;
+  }
+}
