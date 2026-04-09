@@ -300,7 +300,7 @@ header {
 
 .service-card {
   background-color: var(--color-bg-light);
-  padding: var(--spacing-lg);
+  padding: 3rem 2.5rem; /* Padding incrementado radicalmente para dar más aire corporativo */
   border-radius: var(--radius-sm);
   border: 1px solid rgba(59, 44, 36, 0.05);
   box-shadow: 0 4px 6px rgba(0,0,0,0.02);
