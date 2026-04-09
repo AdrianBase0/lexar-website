@@ -1198,8 +1198,81 @@ textarea.form-control {
 }
 
 /* ==================================
-   LOGO MÓVIL: Reducir tamaño del logo en nav móvil
+   CONSTRUCTION MODAL (PREMIUM)
    ================================== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(59, 44, 36, 0.85); /* --color-base-dark con opacidad */
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  background: var(--color-bg-light);
+  padding: 3rem;
+  max-width: 500px;
+  width: 90%;
+  border-radius: var(--radius-sm);
+  text-align: center;
+  box-shadow: 0 24px 64px rgba(0,0,0,0.3);
+  transform: translateY(20px);
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-top: 4px solid var(--color-arrow-bot);
+}
+
+.modal-overlay.active .modal-content {
+  transform: translateY(0);
+}
+
+.modal-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.modal-content h2 {
+  font-family: var(--font-headings);
+  color: var(--color-base-dark);
+  margin-bottom: 1rem;
+}
+
+.modal-content p {
+  color: #666;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.modal-close-btn {
+  background: var(--color-arrow-bot);
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.modal-close-btn:hover {
+  background: var(--color-arrow-top);
+  transform: translateY(-2px);
+}
+
+.modal-close-btn:active {
+  transform: translateY(0);
+}
 @media (max-width: 768px) {
   .logo-icon {
     height: 34px;

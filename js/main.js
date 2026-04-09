@@ -61,4 +61,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
         revealElements.forEach(el => revealObserver.observe(el));
     }
+
+    // =============================================
+    // 4. MODAL DE SITIO EN CONSTRUCCIÓN
+    // =============================================
+    const constructionModal = document.getElementById('construction-modal');
+    const closeModalBtn = document.getElementById('close-modal');
+
+    // Comprobar si ya se mostró en esta sesión
+    const isModalDismissed = sessionStorage.getItem('constructionModalDismissed');
+
+    if (constructionModal && !isModalDismissed) {
+        // Pequeño delay para dejar que la página cargue visualmente
+        setTimeout(() => {
+            constructionModal.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Bloquear scroll
+        }, 800);
+    }
+
+    if (closeModalBtn && constructionModal) {
+        closeModalBtn.addEventListener('click', () => {
+            constructionModal.classList.remove('active');
+            document.body.style.overflow = ''; // Restaurar scroll
+            sessionStorage.setItem('constructionModalDismissed', 'true');
+        });
+    }
 });
