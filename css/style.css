@@ -145,6 +145,18 @@ a:hover {
   color: var(--color-bg-light);
 }
 
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-base-dark);
+  border: 2px solid var(--color-base-dark);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-base-dark);
+  color: var(--color-bg-light);
+  transform: translateY(-2px);
+}
+
 .badge {
   display: inline-block;
   margin-bottom: var(--spacing-md);
@@ -659,50 +671,90 @@ textarea.form-control {
   min-height: 80px;
 }
 
-.form-label {
+/* Labels flotantes — trabaja con la etiqueta <label> nativa */
+.floating-group label {
   position: absolute;
-  top: 0.5rem;
+  top: 0.55rem;
   left: 0;
   font-size: 1rem;
-  color: #666;
+  color: #888;
   pointer-events: none;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
+  background: transparent;
+  padding: 0 2px;
 }
 
-/* Animación Flotante: Activa on focus, text entered, u obligatoria para select */
-.form-control:focus ~ .form-label,
-.form-control:not(:placeholder-shown) ~ .form-label,
-.select-label {
-  top: -1.2rem;
-  font-size: 0.75rem;
-  font-weight: 600;
+/* Levantarse: cuando el input tiene foco o tiene contenido (placeholder=" ") */
+.form-control:focus ~ label,
+.form-control:not(:placeholder-shown) ~ label {
+  top: -1.3rem;
+  font-size: 0.72rem;
+  font-weight: 700;
   color: var(--color-arrow-bot);
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.6px;
 }
 
-.form-control:not(:focus):not(:placeholder-shown) ~ .form-label,
-.form-control:not(:focus) ~ .select-label {
-  color: #777; /* Se queda oscuro si pierde el focus pero hay texto */
+/* Select: siempre arriba porque el placeholder está oculto con 'hidden' */
+.floating-group label.select-label {
+  top: -1.3rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.form-control:focus ~ label.select-label {
+  color: var(--color-arrow-bot);
+}
+
+/* Estado post-foco: label queda arriba pero en gris */
+.form-control:not(:focus):not(:placeholder-shown) ~ label {
+  color: #777;
 }
 
 .checkbox-group {
   display: flex;
-  align-items: flex-start;
-  gap: 0.75rem;
+  flex-direction: column;
   font-size: 0.9rem;
   color: #555;
   margin-top: 0.5rem;
 }
 
-.checkbox-group input {
-  margin-top: 0.25rem;
+.checkbox-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
   cursor: pointer;
+  line-height: 1.5;
 }
 
-.checkbox-group.is-invalid {
-  box-shadow: 0 4px 6px -1px rgba(201, 48, 44, 0.1), 0 2px 4px -1px rgba(201, 48, 44, 0.06);
-  padding: 0.5rem;
+.checkbox-container input[type="checkbox"] {
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+  accent-color: var(--color-arrow-bot);
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+/* Link de política dentro del checkbox */
+.checkbox-container a {
+  color: var(--color-arrow-bot);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.2s ease;
+}
+
+.checkbox-container a:hover {
+  color: var(--color-arrow-top);
+}
+
+.checkbox-group.is-invalid .checkbox-container {
+  box-shadow: 0 0 0 3px rgba(201, 48, 44, 0.15);
+  padding: 0.4rem 0.6rem;
   border-radius: 4px;
   background: rgba(201, 48, 44, 0.03);
 }

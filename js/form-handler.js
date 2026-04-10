@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     const contactForm = document.getElementById("contact-form");
     const feedbackBox = document.getElementById("form-feedback");
-    const submitBtn = document.getElementById("submit_btn");
+    // El botón de submit se selecciona desde el form para no depender de un ID externo
+    const submitBtn = contactForm ? contactForm.querySelector("button[type='submit']") : null;
 
     if (contactForm) {
         contactForm.addEventListener("submit", async (e) => {
@@ -15,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
             
             // Recoger valores
             const rawName = document.getElementById("full_name").value.trim();
-            const rawEmail = document.getElementById("email_address").value.trim();
+            const rawEmail = document.getElementById("corporate_email").value.trim();
             const rawSubject = document.getElementById("subject").value;
             const rawMsg = document.getElementById("consult_message").value.trim();
             const trapBot = document.getElementById("trap_bot").value;
@@ -39,10 +40,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!rawEmail) {
-                showFieldError("email_address", "El correo es obligatorio.");
+                showFieldError("corporate_email", "El correo es obligatorio.");
                 isFormValid = false;
             } else if (!emailRegex.test(rawEmail)) {
-                showFieldError("email_address", "Formato de correo no válido.");
+                showFieldError("corporate_email", "Formato de correo no válido.");
                 isFormValid = false;
             }
 
@@ -111,7 +112,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function showFieldError(inputId, message, isCheckbox = false) {
         const inputEl = document.getElementById(inputId);
-        const errorSpan = document.getElementById("error_" + inputId);
+        // Los spans tienen id="error-CAMPO" (con guion, no guion bajo)
+        const errorSpan = document.getElementById("error-" + inputId);
         
         if (errorSpan) {
             errorSpan.textContent = message;
@@ -120,7 +122,8 @@ document.addEventListener("DOMContentLoaded", () => {
         
         if (inputEl) {
             if (isCheckbox) {
-                const wrapper = document.getElementById("wrapper_privacy_policy");
+                // Marcar el .checkbox-group contenedor
+                const wrapper = inputEl.closest(".checkbox-group");
                 if (wrapper) wrapper.classList.add("is-invalid");
             } else {
                 inputEl.classList.add("is-invalid");
@@ -139,13 +142,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function loaderUI(isLoading) {
+        if (!submitBtn) return;
         if (isLoading) {
             submitBtn.disabled = true;
             submitBtn.textContent = "Procesando de forma segura...";
-            feedbackBox.style.display = "none";
+            if (feedbackBox) feedbackBox.style.display = "none";
         } else {
             submitBtn.disabled = false;
-            submitBtn.textContent = "Enviar Comunicado";
+            submitBtn.textContent = "Enviar Solicitud";
         }
     }
 });

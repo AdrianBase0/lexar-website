@@ -103,9 +103,9 @@ include 'components/header.php';
                             <span class="error-text" id="error-subject"></span>
                         </div>
                         <div class="form-group floating-group full-width">
-                            <textarea name="message" id="message" class="form-control" rows="4" placeholder=" " required></textarea>
-                            <label for="message">Mensaje / Descripción del caso</label>
-                            <span class="error-text" id="error-message"></span>
+                            <textarea name="consult_message" id="consult_message" class="form-control" rows="4" placeholder=" " required></textarea>
+                            <label for="consult_message">Mensaje / Descripción del caso</label>
+                            <span class="error-text" id="error-consult_message"></span>
                         </div>
                         
                         <div class="form-group full-width checkbox-group">

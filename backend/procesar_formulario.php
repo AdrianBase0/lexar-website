@@ -28,7 +28,7 @@ if (!empty($trapBot)) {
 // 2. RECIBIR Y SANITIZAR VARIABLES 
 // Evitar XSS (Cross Site Scripting) limpiando etiquetas HTML ocultas o scripts.
 $rawName    = trim($_POST['full_name'] ?? '');
-$rawEmail   = trim($_POST['email_address'] ?? '');
+$rawEmail   = trim($_POST['corporate_email'] ?? '');
 $rawSubject = trim($_POST['subject'] ?? '');
 $rawMsg     = trim($_POST['consult_message'] ?? '');
 $privacy    = isset($_POST['privacy_policy']) ? true : false;
@@ -62,7 +62,7 @@ if (!$privacy) {
 // ============================================
 
 /*
-require 'config/env.php'; // Secret keys importadas sin subir a GIT
+require 'config.php'; // Secret keys importadas sin subir a GIT
 require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
 require 'PHPMailer/src/Exception.php';
