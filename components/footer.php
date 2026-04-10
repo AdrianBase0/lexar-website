@@ -7,7 +7,9 @@ $global_content = $content['global'] ?? [];
     <footer>
         <div class="container footer-container">
             <div class="footer-brand">
-                <img src="assets/icons/icon.svg" alt="Advance Lexar" width="44" height="44" class="footer-logo-img">
+                <div class="footer-logo-container">
+                    <img src="assets/icons/icon.svg" alt="Advance Lexar" width="44" height="44" class="footer-logo-img">
+                </div>
                 <span class="logo-text footer-logo">Advance<span>Lexar</span></span>
                 <p><?= $global_content['footer']['descripcion'] ?? '[RELLENAR →]' ?></p>
             </div>
