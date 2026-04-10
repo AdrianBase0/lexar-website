@@ -142,7 +142,7 @@ try {
     http_response_code(500);
     echo json_encode([
         "status" => "error", 
-        "message" => "Error técnico al procesar el envío. Por favor, contacte directamente con info@advancelexar.com"
+        "message" => "Error técnico al procesar el envío. Por favor, contacte directamente con contacto@advancelexar.com"
     ]);
 }
 ?>

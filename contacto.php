@@ -44,7 +44,7 @@ include 'components/header.php';
                         </div>
                         <div class="info-item-text">
                             <span class="info-label">Email Corporativo</span>
-                            <span class="info-value"><?= $content['global']['contacto_rapido']['email'] ?? 'info@advancelexar.com' ?></span>
+                            <span class="info-value"><?= $content['global']['contacto_rapido']['email'] ?? 'contacto@advancelexar.com' ?></span>
                         </div>
                     </div>
                     <div class="info-item">
