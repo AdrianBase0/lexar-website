@@ -9,12 +9,7 @@ $content = json_decode($json_file, true);
 
 // 2. Extraer datos específicos
 $privacidad_info = $content['legal']['privacidad'] ?? [];
-$page_content = [
-    'seo' => [
-        'titulo' => 'Política de Privacidad | Advance Lexar - Consultoría',
-        'descripcion' => 'Tratamiento, custodia y protección de datos según el RGPD.'
-    ]
-];
+$page_content = $content['pages']['politica_privacidad'] ?? [];
 $current_page = 'politica-privacidad.php';
 
 // 3. Incluir el Head Común
@@ -27,8 +22,8 @@ include 'components/header.php';
 <main id="main-content">
     <section class="page-header" style="padding: 4rem 0;">
         <div class="container text-center reveal">
-            <span class="badge">RGPD</span>
-            <h1>Política de Privacidad</h1>
+            <span class="badge"><?= $page_content['cabecera']['badge'] ?? 'Legal' ?></span>
+            <h1><?= $page_content['cabecera']['titulo'] ?? 'Política de Privacidad' ?></h1>
         </div>
     </section>
 

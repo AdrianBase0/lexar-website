@@ -9,12 +9,7 @@ $content = json_decode($json_file, true);
 
 // 2. Extraer datos específicos
 $legal_info = $content['legal']['aviso_legal'] ?? [];
-$page_content = [
-    'seo' => [
-        'titulo' => 'Aviso Legal | Advance Lexar - Consultoría',
-        'descripcion' => 'Información legal, términos de uso y datos registrales de Advance Lexar.'
-    ]
-];
+$page_content = $content['pages']['aviso_legal'] ?? [];
 $current_page = 'aviso-legal.php';
 
 // 3. Incluir el Head Común
@@ -27,8 +22,8 @@ include 'components/header.php';
 <main id="main-content">
     <section class="page-header" style="padding: 4rem 0;">
         <div class="container text-center reveal">
-            <span class="badge">Legal</span>
-            <h1>Aviso Legal</h1>
+            <span class="badge"><?= $page_content['cabecera']['badge'] ?? 'Legal' ?></span>
+            <h1><?= $page_content['cabecera']['titulo'] ?? 'Aviso Legal' ?></h1>
         </div>
     </section>
 

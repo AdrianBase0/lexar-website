@@ -29,6 +29,9 @@ include 'components/header.php';
                 <a href="servicios.php" class="btn btn-secondary"><?= $page_content['hero']['cta_secundario'] ?? 'Ver servicios' ?></a>
             </div>
         </div>
+        <div class="hero-image-wrapper">
+            <img src="assets/img/hero-principal.webp" alt="Imagen corporativa de Advance Lexar - Consultoría Estratégica" width="1200" height="600" class="hero-image">
+        </div>
     </section>
 
     <!-- SECCIÓN ÁREAS DE PRÁCTICA -->
@@ -43,7 +46,7 @@ include 'components/header.php';
                 <!-- Tarjeta 1: Consultoría Legal -->
                 <article class="service-card">
                     <div class="card-icon">
-                        <img src="https://via.placeholder.com/48x48/f9f8f6/7d4334?text=Ico" alt="" width="48" height="48" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-arrow-top)"><path d="M12 7l3 7-3 7-3-7z"></path><path d="M12 3v4"></path><path d="M12 21v2"></path><path d="M4 11h2"></path><path d="M18 11h2"></path></svg>
                     </div>
                     <h3>Consultoría Legal</h3>
                     <p><?= $content['pages']['servicios']['items']['legal']['parrafo_1'] ?? '[TEXTO CORTO SERVICIO 1]' ?></p>
@@ -53,7 +56,7 @@ include 'components/header.php';
                 <!-- Tarjeta 2: Estrategia y Economía -->
                 <article class="service-card">
                     <div class="card-icon">
-                        <img src="https://via.placeholder.com/48x48/f9f8f6/7d4334?text=Ico" alt="" width="48" height="48" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-arrow-top)"><path d="M3 3v18h18"></path><path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"></path></svg>
                     </div>
                     <h3>Estrategia y Economía</h3>
                     <p><?= $content['pages']['servicios']['items']['estrategica']['parrafo_1'] ?? '[TEXTO CORTO SERVICIO 2]' ?></p>
@@ -63,7 +66,7 @@ include 'components/header.php';
                 <!-- Tarjeta 3: Gestión Inmobiliaria -->
                 <article class="service-card">
                     <div class="card-icon">
-                        <img src="https://via.placeholder.com/48x48/f9f8f6/7d4334?text=Ico" alt="" width="48" height="48" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-arrow-top)"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
                     </div>
                     <h3>Gestión Inmobiliaria</h3>
                     <p><?= $content['pages']['servicios']['items']['inmobiliaria']['parrafo_1'] ?? '[TEXTO CORTO SERVICIO 3]' ?></p>
@@ -78,7 +81,7 @@ include 'components/header.php';
     <section class="about-summary">
         <div class="container grid-2-columns">
             <div class="about-image reveal-left">
-                <img src="https://via.placeholder.com/600x800/d28b46/ffffff?text=[IMAGEN_SOBRE_NOSOTROS_600x800]" alt="[DESCRIPCION_IMAGEN_FILOSOFIA]" width="600" height="800" loading="lazy">
+                <img src="assets/img/foto-firma.webp" alt="Sede corporativa de Advance Lexar - Profesionalidad y Rigor" width="600" height="800" loading="lazy">
             </div>
             <div class="about-text reveal-right">
                 <span class="badge"><?= $page_content['secciones']['nosotros_resumen']['badge'] ?? 'Nuestra Firma' ?></span>
@@ -94,8 +97,8 @@ include 'components/header.php';
 
     <!-- SECCIÓN CTA FINAL -->
     <?php 
-    $cta_title = "[TITULO LLAMADA ACCION FINAL]";
-    $cta_subtitle = "[SUBTITULO LLAMADA ACCION FINAL]";
+    $cta_title = $page_content['cta_final']['titulo'] ?? 'Asegure Hoy el Futuro de su Organización';
+    $cta_subtitle = $page_content['cta_final']['subtitulo'] ?? 'Contacte con nuestros consultores y descubra cómo podemos aportar valor estratégico a su empresa.';
     include 'components/cta_banner.php'; 
     ?>
 </main>

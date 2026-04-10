@@ -15,6 +15,10 @@
     <link rel="icon" type="image/webp" href="assets/icons/icon.webp">
     <link rel="stylesheet" href="css/style.css">
 
+    <?php if (isset($current_page) && $current_page === 'index.php'): ?>
+    <link rel="preload" as="image" href="assets/img/hero-principal.webp">
+    <?php endif; ?>
+
     <?php if (isset($page_content['seo']['json_ld'])): ?>
     <script type="application/ld+json">
     <?= json_encode($page_content['seo']['json_ld'], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE) ?>

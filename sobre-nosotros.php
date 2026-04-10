@@ -44,7 +44,7 @@ include 'components/header.php';
     <section class="pb-xxl">
         <div class="container">
             <div class="service-image hover-zoom">
-                <img src="https://via.placeholder.com/1200x500/3b2c24/e5ce83?text=[IMAGEN DE EQUIPO O INSTALACIONES 1200x500]" alt="[DESCRIPCION IMAGEN ACCESIBILIDAD PARA EL LECTOR DE PANTALLAS]" width="1200" height="500" loading="lazy">
+                <img src="assets/img/equipo-instalaciones.webp" alt="Instalaciones corporativas de Advance Lexar y equipo directivo" width="1200" height="500" loading="lazy">
             </div>
         </div>
     </section>
@@ -77,8 +77,8 @@ include 'components/header.php';
 
     <!-- CTA FINAL -->
     <?php 
-    $cta_title = "Cimentando el futuro de su empresa";
-    $cta_subtitle = "Nuestra máxima es la confidencialidad absoluta, el rigor académico y la orientación a resultados tangibles.";
+    $cta_title = $page_content['cta_final']['titulo'] ?? "Cimentando el futuro de su empresa";
+    $cta_subtitle = $page_content['cta_final']['subtitulo'] ?? "Nuestra máxima es la confidencialidad absoluta, el rigor académico y la orientación a resultados tangibles.";
     include 'components/cta_banner.php'; 
     ?>
 </main>

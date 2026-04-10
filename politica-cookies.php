@@ -9,12 +9,7 @@ $content = json_decode($json_file, true);
 
 // 2. Extraer datos específicos
 $cookies_info = $content['legal']['cookies'] ?? [];
-$page_content = [
-    'seo' => [
-        'titulo' => 'Política de Cookies | Advance Lexar - Consultoría',
-        'descripcion' => 'Información detallada sobre el uso de cookies en el sitio web.'
-    ]
-];
+$page_content = $content['pages']['politica_cookies'] ?? [];
 $current_page = 'politica-cookies.php';
 
 // 3. Incluir el Head Común
@@ -27,8 +22,8 @@ include 'components/header.php';
 <main id="main-content">
     <section class="page-header" style="padding: 4rem 0;">
         <div class="container text-center reveal">
-            <span class="badge">Navegación</span>
-            <h1>Política de Cookies</h1>
+            <span class="badge"><?= $page_content['cabecera']['badge'] ?? 'Legal' ?></span>
+            <h1><?= $page_content['cabecera']['titulo'] ?? 'Política de Cookies' ?></h1>
         </div>
     </section>
 

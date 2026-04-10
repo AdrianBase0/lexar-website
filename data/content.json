@@ -41,11 +41,11 @@
           "titulo": "Compromiso Absoluto con la Excelencia Corporativa",
           "parrafo_1": "En Advance Lexar entendemos que el entorno empresarial actual exige respuestas precisas y ágiles. Nuestra filosofía se fundamenta en la protección integral de los intereses de nuestros clientes, ofreciendo un asesoramiento estratégico basado en la anticipación, la confidencialidad y el profundo conocimiento técnico. Acompañamos a su empresa en cada fase de su ciclo de vida.",
           "parrafo_2": "Nuestra metodología aúna el rigor analítico con una visión práctica del mercado. Actuamos como un socio de confianza, coordinando equipos multidisciplinares y garantizando el estricto cumplimiento normativo para que usted pueda centrarse en el éxito de su negocio."
-        },
-        "cta_final": {
-          "titulo": "Asegure Hoy el Futuro de su Organización",
-          "subtitulo": "Contacte con nuestros consultores y descubra cómo podemos aportar valor estratégico a su empresa."
         }
+      },
+      "cta_final": {
+        "titulo": "Asegure Hoy el Futuro de su Organización",
+        "subtitulo": "Contacte con nuestros consultores y descubra cómo podemos aportar valor estratégico a su empresa."
       }
     },
     "servicios": {
@@ -89,6 +89,10 @@
             "Elaboración de planes de explotación rentables."
           ]
         }
+      },
+      "cta_final": {
+        "titulo": "¿Necesita impulsar el crecimiento de su empresa?",
+        "subtitulo": "Nuestros expertos están a su disposición para diseñar la estrategia óptima."
       }
     },
     "sobre_nosotros": {
@@ -118,6 +122,10 @@
           "Cumplimiento normativo estricto y actualización jurídica constante.",
           "Compromiso inquebrantable con la protección de los intereses del cliente."
         ]
+      },
+      "cta_final": {
+        "titulo": "Cimentando el futuro de su empresa",
+        "subtitulo": "Nuestra máxima es la confidencialidad absoluta, el rigor académico y la orientación a resultados tangibles."
       }
     },
     "contacto": {
@@ -137,6 +145,36 @@
       "formulario": {
         "titulo": "Envíenos un comunicado",
         "subtitulo": "Complete el formulario y el departamento designado evaluará su situación en las primeras 48 horas operativas."
+      }
+    },
+    "aviso_legal": {
+      "seo": {
+        "titulo": "Aviso Legal | Advance Lexar - Consultoría",
+        "descripcion": "Información legal, términos de uso y datos registrales de Advance Lexar."
+      },
+      "cabecera": {
+        "badge": "Legal",
+        "titulo": "Aviso Legal"
+      }
+    },
+    "politica_privacidad": {
+      "seo": {
+        "titulo": "Política de Privacidad | Advance Lexar",
+        "descripcion": "Información detallada sobre el tratamiento de sus datos personales y sus derechos (RGPD)."
+      },
+      "cabecera": {
+        "badge": "Legal",
+        "titulo": "Política de Privacidad"
+      }
+    },
+    "politica_cookies": {
+      "seo": {
+        "titulo": "Política de Cookies | Advance Lexar",
+        "descripcion": "Información sobre el uso de cookies y tecnologías similares en nuestro sitio web."
+      },
+      "cabecera": {
+        "badge": "Legal",
+        "titulo": "Política de Cookies"
       }
     }
   },

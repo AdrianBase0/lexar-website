@@ -361,7 +361,13 @@ header.scrolled {
 .hero-image {
   width: 100%;
   object-fit: cover;
-  max-height: 60vh;
+  max-height: 50vh; /* Reducido para desktop */
+}
+
+@media (max-width: 768px) {
+  .hero-image {
+    max-height: 35vh; /* Aún más compacto en móviles */
+  }
 }
 
 /* ==================================
