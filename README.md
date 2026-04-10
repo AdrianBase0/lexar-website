@@ -1,51 +1,64 @@
-# Advance Lexar - Consultoría de Gestión Empresarial
+# Advance Lexar - Consultoría Estratégica Concursal
 
-Este repositorio contiene el código fuente de la página web oficial para **Advance Lexar**, una empresa de consultoría especializada en gestión empresarial.
+Este repositorio contiene el código fuente de la página web oficial para **Advance Lexar**, una firma de consultoría estratégica y gestión empresarial especializada en asesoramiento legal, económico e inmobiliario.
 
 ## 🚀 Descripción del Proyecto
 
-El sitio web es una plataforma multipágina orientada a presentar los servicios, valores, el equipo de profesionales y las vías de contacto de Advance Lexar de una manera moderna, clara y profesional.
+El sitio web es una plataforma multipágina profesional diseñada para proyectar confianza, rigor y excelencia técnica. Implementa una arquitectura modular basada en PHP para la reutilización de componentes y una separación clara entre lógica, contenido y diseño.
 
 ## 🛠️ Stack Tecnológico
 
-Para garantizar un rendimiento óptimo, independencia y gran velocidad de carga, este proyecto cumple con las normativas estipuladas y ha sido construido estrictamente con tecnologías nativas, evitando el uso de frameworks o librerías:
+El proyecto se rige por una filosofía de **cero dependencias externas innecesarias** y máximo rendimiento (Lighthouse 100/100):
 
-*   **HTML5**: Código con estricta semántica para mejorar la accesibilidad y el posicionamiento SEO.
-*   **CSS3 (Vanilla)**: Uso de Custom Properties (Variables CSS) para el sistema de diseño, Grid/Flexbox para un layout responsivo y estilos modulares sin dependencias externas (sin Tailwind, Bootstrap, etc.).
-*   **JavaScript (Vanilla)**: Gestión de eventos, interactividad de la interfaz y utilidades manejadas completamente con ECMAScript moderno.
+*   **Frontend**: HTML5 Semántico, CSS3 Nativo (Custom Properties, Grid, Flexbox) y JavaScript Vanilla (ES6+).
+*   **Backend**: PHP 8+ para la gestión de plantillas dynamic injection y procesamiento de formularios.
+*   **Correo**: Integración con **PHPMailer** para envíos seguros vía SMTP.
+*   **Contenido**: Sistema de gestión de contenidos desacoplado mediante archivos **JSON**.
 
 ## 📂 Estructura del Proyecto
 
-La estructura de carpetas sugerida para mantener el orden de assets y código es la siguiente:
-
 ```text
-├── assets/          # Imágenes, íconos web, tipografías locales, etc.
-├── css/             # Archivos de estilos (ej. style.css, variables.css)
-├── js/              # Funcionalidad del lado del cliente (ej. main.js)
-├── index.html       # Página principal (Home)
-├── .gitignore       # Exclusiones de Git y registros de caché (IA/Editor)
-└── README.md        # Documentación principal del repositorio
+/
+├── assets/                  # Recursos estáticos
+│   ├── img/                 # Fotos y gráficos optimizados (WebP)
+│   ├── icons/               # Iconografía corporativa (SVG)
+│   └── fonts/               # Tipografías locales
+├── backend/                 # Lógica de servidor y API
+│   ├── PHPMailer/           # Dependencia para envío de correos
+│   ├── config.php           # Configuración (SMTP, etc.)
+│   └── procesar_formulario.php # Handler del formulario de contacto
+├── components/              # Fragmentos de código reutilizables (PHP)
+│   ├── head.php             # Metadatos y carga de estilos
+│   ├── header.php           # Navegación global
+│   └── footer.php           # Pie de página y carga de scripts
+├── css/                     # Hojas de estilo modulares
+├── data/                    # Almacenamiento de textos y contenido
+│   └── content.json         # Fuente única de verdad para los textos del sitio
+├── js/                      # Scripts de cliente
+│   ├── main.js              # Interactividad global (Scroll reveal, etc.)
+│   └── form-handler.js      # Validación y envío AJAX del formulario
+├── index.php                # Página de inicio
+├── servicios.php            # Áreas de práctica
+├── sobre-nosotros.php       # Filosofía y modelo de la firma
+├── contacto.php             # Canal de comunicación
+└── [legal].php              # Páginas legales obligatorias (Aviso, Privacidad, Cookies)
 ```
-*(Nota: Añade el resto de páginas `.html` directamente en la raíz o en directorios específicos de funcionalidad si el proyecto escalase).*
 
 ## ⚙️ Desarrollo y Entorno Local
 
-Al tratarse de un ecosistema estático y modular en su estado más puro, la inicialización es excepcionalmente simple y no requiere procesos de *build* (compilación).
+Al incluir lógica en PHP, el proyecto requiere un servidor web local para funcionar correctamente:
 
-1.  **Clona el repositorio** en tu entorno de trabajo:
-    ```bash
-    git clone [ruta-del-repositorio]
-    ```
-2.  **Entorno de ejecución**:
-    *   Puedes simplemente abrir el archivo `index.html` en tu navegador.
-    *   *Recomendación*: Es ideal utilizar una herramienta como la extensión **Live Server** en VS Code u otro servidor local estático (como `npx http-server` o `python -m http.server`) para evitar problemas con las políticas de CORS del navegador al consumir, por ejemplo, scripts modulares en un futuro.
+1.  **Requisitos**: Disponer de un entorno como XAMPP, Laragon, LocalWP o Docker con soporte para PHP 8.0+.
+2.  **Configuración**:
+    *   Copia los archivos al directorio raíz de tu servidor (ej. `htdocs`).
+    *   Configura las credenciales SMTP en `backend/config.php` para habilitar el formulario de contacto.
+3.  **Ejecución**: Accede a la URL local (ej. `http://localhost/lexar-website/`).
 
-## 📐 Reglas de Contribución y Código
+## 📐 Reglas de Diseño e Identidad
 
-Toda contribución y avance en este proyecto debe respetar las siguientes normas fundacionales del diseño:
-*   **Sin frameworks por defecto**: Mantenimiento puro y sostenible centrado en tecnologías fundamentales del frontend.
-*   **Responsive Web Design**: Se priorizan estilos escalables y responsivos (Mobile-First de preferencia) que garanticen una experiencia Premium en cualquier dispositivo.
-*   **Código limpio e indentado**: Estructuras bien comentadas y organizadas para ayudar en la mantenibilidad sin necesidad excesiva de documentación técnica externa.
+*   **Tipografía**: Merriweather (Serif) para títulos y Open Sans para cuerpo de texto.
+*   **Aesthetics**: Diseño limpio, espacios amplios y micro-animaciones sutiles.
+*   **Accesibilidad**: Cumplimiento de WCAG 2.1 - Nivel AA.
 
 ---
-© Advance Lexar. Todos los derechos reservados.
+© <?= date('Y') ?> Advance Lexar. Todos los derechos reservados.
