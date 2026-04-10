@@ -33,7 +33,7 @@ include 'components/header.php';
             <p>Advance Lexar es el Responsable del tratamiento de los datos personales del Usuario recopilados en este sitio web. Nuestros datos de contacto son <?= $privacidad_info['dpo_contacto'] ?? '[DIRECCION Y CORREO DPO]' ?>.</p>
 
             <h2 class="mt-lg">2. Finalidad de la recopilación de datos</h2>
-            <p>Los datos aportados de manera voluntaria a través del formulario de contacto (Nombre, Correo Corporativo, Asunto y Mensaje) serán utilizados única y exclusivamente con el fin de evaluar la solicitud y emitir una respuesta acorde por parte de nuestro departamento de consultoría.</p>
+            <p>Los datos aportados de manera voluntaria a través del formulario de contacto (Nombre, Correo, Asunto y Mensaje) serán utilizados única y exclusivamente con el fin de evaluar la solicitud y emitir una respuesta acorde por parte de nuestro departamento de consultoría.</p>
             
             <h2 class="mt-lg">3. Legitimación y Plazos</h2>
             <p>La base legal para el tratamiento de los datos es el consentimiento expreso del interesado al marcar la casilla de verificación en el formulario. Los datos se conservarán durante <?= $privacidad_info['plazo_conservacion'] ?? '[PLAZO LEGAL AQUI]' ?> o hasta que el interesado solicite su supresión.</p>

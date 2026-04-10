@@ -8,7 +8,7 @@
     },
     "contacto_rapido": {
       "email": "contacto@advancelexar.com",
-      "telefono": "[+34 91X XXX XXX]",
+      "telefono": "En proceso de gestión y contratación",
       "direccion": "Calle de Francisco Silvela, 110, planta 2, 28002 Madrid"
     }
   },
@@ -144,7 +144,20 @@
       },
       "formulario": {
         "titulo": "Formulario de Consulta",
-        "subtitulo": "Remita su consulta y el departamento correspondiente realizará una evaluación preliminar en un plazo máximo de 48 horas operativas."
+        "subtitulo": "Remita su consulta y el departamento correspondiente realizará una evaluación preliminar en un plazo máximo de 48 horas operativas.",
+        "labels": {
+          "nombre": "Nombre Completo",
+          "email": "Correo",
+          "asunto": "Asunto de la consulta",
+          "mensaje": "Mensaje / Descripción del caso",
+          "privacidad": "He leído y acepto la",
+          "boton": "Enviar Solicitud"
+        }
+      },
+      "info_panel_labels": {
+        "email": "Correo",
+        "telefono": "Atención Telefónica",
+        "direccion": "Sede Central"
       }
     },
     "aviso_legal": {
