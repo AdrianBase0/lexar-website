@@ -653,16 +653,27 @@ footer {
   justify-content: center;
 }
 
-.info-item-text h4 { 
+.info-item-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-label { 
   color: var(--color-arrow-mid); 
   margin-bottom: 0.25rem; 
   font-family: var(--font-body); 
   text-transform: uppercase; 
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   letter-spacing: 1px;
+  font-weight: 600;
 }
 
-.info-item-text p { margin-bottom: 0; opacity: 0.8; }
+.info-value { 
+  margin-bottom: 0; 
+  opacity: 0.9; 
+  font-size: 1.1rem;
+  font-weight: 500;
+}
 
 .contact-form-wrapper {
   padding: 2rem 0;

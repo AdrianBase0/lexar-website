@@ -1,4 +1,4 @@
-﻿# Dependencias y paquetes
+# Dependencias y paquetes
 node_modules/
 jspm_packages/
 
@@ -27,7 +27,7 @@ yarn-error.log*
 .env
 .env.local
 .env.*.local
-config.php # (Si decides guardar aqu├¡ claves SMTP fuera del versionado)
+backend/config.php # Credenciales SMTP de IONOS (IGNORADO POR SEGURIDAD)
 contenidos_advance_lexar.md
 
 # Archivos del sistema operativo
@@ -53,3 +53,5 @@ ftp-sync.json
 dist/
 build/
 out/
+
+config.php
