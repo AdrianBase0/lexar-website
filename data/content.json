@@ -1,9 +1,9 @@
 {
   "global": {
     "nombre_firma": "Advance Lexar",
-    "lema": "Consultoría Estratégica Concursal",
+    "lema": "Consultoría Estratégica y Gestión de Activos",
     "footer": {
-      "descripcion": "Consultoría estratégica, legal e inmobiliaria integral. Rigor, excelencia y confidencialidad para empresas y profesionales.",
+      "descripcion": "Firma especializada en consultoría estratégica, legal e inmobiliaria. Aportamos rigor técnico y confidencialidad en la gestión de activos y el cumplimiento normativo.",
       "copyright": "© 2026 Advance Lexar. Todos los derechos reservados."
     },
     "contacto_rapido": {
@@ -21,136 +21,136 @@
   "pages": {
     "index": {
       "seo": {
-        "titulo": "Consultoría Estratégica y Legal de Excelencia | Advance Lexar",
-        "descripcion": "Advance Lexar: Ofrecemos soluciones integrales en el ámbito jurídico, económico e inmobiliario. Protegemos y optimizamos el futuro de su empresa."
+        "titulo": "Consultoría Estratégica y Gestión de Activos | Advance Lexar",
+        "descripcion": "Soluciones integrales en consultoría legal, económica y gestión inmobiliaria. Blindamos el crecimiento de su organización con rigor técnico."
       },
       "hero": {
-        "titulo": "Consultoría Estratégica y Legal de Excelencia",
-        "subtitulo": "Ofrecemos soluciones integrales en el ámbito jurídico, económico e inmobiliario. Protegemos y optimizamos el futuro de su empresa.",
-        "cta_principal": "Solicitar asesoramiento",
-        "cta_secundario": "Nuestras áreas de práctica"
+        "titulo": "Estrategia Corporativa y Gestión de Activos de Alto Rendimiento",
+        "subtitulo": "Garantizamos la estabilidad y el crecimiento de su estructura empresarial mediante un enfoque técnico multidisciplinar. Especialistas en consultoría legal, estratégica e inmobiliaria.",
+        "cta_principal": "Solicitar consulta técnica",
+        "cta_secundario": "Áreas de actuación"
       },
       "secciones": {
         "servicios_intro": {
-          "badge": "Áreas de Práctica",
-          "titulo": "Servicios de Consultoría",
-          "descripcion": "Un enfoque multidisciplinar para dar respuesta a los retos corporativos más complejos con la máxima eficacia."
+          "badge": "Áreas de Actuación",
+          "titulo": "Soluciones Especializadas",
+          "descripcion": "Un enfoque integral diseñado para abordar retos corporativos mediante la excelencia técnica y la visión estratégica."
         },
         "nosotros_resumen": {
-          "badge": "Nuestra Firma",
-          "titulo": "Compromiso Absoluto con la Excelencia Corporativa",
-          "parrafo_1": "En Advance Lexar entendemos que el entorno empresarial actual exige respuestas precisas y ágiles. Nuestra filosofía se fundamenta en la protección integral de los intereses de nuestros clientes, ofreciendo un asesoramiento estratégico basado en la anticipación, la confidencialidad y el profundo conocimiento técnico. Acompañamos a su empresa en cada fase de su ciclo de vida.",
-          "parrafo_2": "Nuestra metodología aúna el rigor analítico con una visión práctica del mercado. Actuamos como un socio de confianza, coordinando equipos multidisciplinares y garantizando el estricto cumplimiento normativo para que usted pueda centrarse en el éxito de su negocio."
+          "badge": "La Firma",
+          "titulo": "Autoridad Técnica al Servicio de su Organización",
+          "parrafo_1": "Advance Lexar se fundamenta en la protección de los intereses corporativos a través de un asesoramiento riguroso y una gestión estratégica avanzada. Entendemos la complejidad del entorno empresarial actual y aportamos soluciones basadas en el conocimiento técnico, la confidencialidad y la anticipación de riesgos. Nuestra estructura permite acompañar a las organizaciones en todas las fases de su ciclo operativo.",
+          "parrafo_2": "Nuestra metodología integra el análisis económico con la coordinación técnica en materia legal e inmobiliaria. Actuamos como un socio estratégico de confianza, garantizando el estricto cumplimiento normativo y la optimización de activos para que la dirección pueda centrarse en la consecución de sus objetivos de negocio."
         }
       },
       "cta_final": {
-        "titulo": "Asegure Hoy el Futuro de su Organización",
-        "subtitulo": "Contacte con nuestros consultores y descubra cómo podemos aportar valor estratégico a su empresa."
+        "titulo": "Optimice la Estructura de su Empresa",
+        "subtitulo": "Contacte con nuestro equipo de consultores para evaluar su situación actual y definir una hoja de ruta estratégica."
       }
     },
     "servicios": {
       "seo": {
-        "titulo": "Servicios | Advance Lexar - Consultoría Estratégica",
-        "descripcion": "Soluciones especializadas en consultoría legal, económica y gestión de activos para blindar y potenciar su actividad corporativa."
+        "titulo": "Servicios de Consultoría Corporativa | Advance Lexar",
+        "descripcion": "Consultoría legal, cumplimiento normativo, viabilidad económica y gestión de activos inmobiliarios para el sector B2B."
       },
       "cabecera": {
-        "badge": "Áreas de Práctica",
-        "titulo": "Catálogo de Servicios",
-        "subtitulo": "Soluciones especializadas en consultoría legal, económica y gestión de activos para blindar y potenciar su actividad corporativa."
+        "badge": "Servicios",
+        "titulo": "Especialización y Valor Añadido",
+        "subtitulo": "Proporcionamos soluciones técnicas avanzadas orientadas a la protección patrimonial y la optimización de los recursos corporativos."
       },
       "items": {
         "legal": {
           "titulo": "Consultoría Legal y Cumplimiento Normativo",
-          "parrafo_1": "Nuestra división de consultoría legal ofrece un soporte técnico exhaustivo en materias jurídicas, mercantiles y societarias. Diseñamos e implementamos sólidos programas de cumplimiento normativo (Compliance) y protocolos internos adaptados a las particularidades de su sector. Asimismo, gestionamos la elaboración y revisión analítica de todo tipo de documentación corporativa. Actuamos bajo un estricto modelo de intermediación y coordinación técnica, canalizando eficazmente los servicios que requieren intervención de profesionales colegiados conforme a la Ley 2/2007.",
-          "parrafo_2": "Nos enfocamos en la prevención de riesgos legales mediante auditorías y revisiones documentales exhaustivas. Brindamos apoyo consultivo continuo en las relaciones de su empresa con la Administración Pública, entidades privadas, proveedores y clientes. Nuestro objetivo fundamental es establecer una estructura societaria robusta que minimice contingencias y asegure la tranquilidad operativa de los órganos de administración.",
+          "parrafo_1": "Ofrecemos soporte técnico especializado en arquitectura societaria, gobernanza y marcos jurídicos mercantiles. Diseñamos e implementamos sistemas de cumplimiento normativo (Compliance) adaptados a la realidad operativa de cada entidad, minimizando riesgos y asegurando la integridad de los órganos de administración. Advance Lexar opera como una sociedad de intermediación y coordinación técnica, gestionando la intervención de profesionales colegiados con estricta sujeción a la Ley 2/2007.",
+          "parrafo_2": "Nuestra labor se centra en la prevención de contingencias mediante auditorías documentales y revisiones de protocolos internos. Gestionamos la representación consultiva ante administraciones públicas y terceros, estableciendo estructuras contractuales sólidas con proveedores y clientes. El objetivo es proporcionar un entorno de seguridad jurídica que favorezca la continuidad del negocio y la tranquilidad operativa de los gestores.",
           "bullets": [
-            "Implementación de planes de Compliance normativo.",
-            "Elaboración y revisión de contratos mercantiles.",
-            "Asesoramiento preventivo y estructuración societaria."
+            "Diseño e implementación de sistemas de Compliance.",
+            "Estructuración societaria y revisión de protocolos internos.",
+            "Gestión y supervisión de documentación mercantil compleja."
           ]
         },
         "estrategica": {
           "titulo": "Consultoría Estratégica y Económica",
-          "parrafo_1": "Proporcionamos servicios de consultoría estratégica y económica orientados a la optimización integral de los procesos de negocio. Elaboramos detallados planes de viabilidad, estudios de mercado y análisis de rentabilidad para respaldar de manera objetiva sus decisiones de inversión. Asistimos a la dirección ejecutiva en la planificación, organización y gestión comercial de la empresa. Analizamos la estructura administrativa actual para proponer mejoras tangibles que incrementen la eficiencia operativa.",
-          "parrafo_2": "Nuestra visión transversal e interdisciplinar nos permite identificar áreas de mejora sistémica y oportunidades de expansión no exploradas. Apoyamos a profesionales y corporaciones en la intermediación comercial y la representación mercantil, siempre con un enfoque estrictamente centrado en el retorno de inversión. Transformamos los datos complejos en información útil y precisa para el diseño de estrategias empresariales líderes en su sector.",
+          "parrafo_1": "Desarrollamos estrategias orientadas a la viabilidad económica y la eficiencia organizativa. Nuestros consultores elaboran análisis de rentabilidad, planes estratégicos y estudios de mercado que sirven de base objetiva para la toma de decisiones críticas por parte de la propiedad o el consejo de administración. Analizamos los procesos internos para detectar ineficiencias y proponer soluciones de mejora estructural que impacten positivamente en el rendimiento final.",
+          "parrafo_2": "Aportamos una visión transversal capaz de identificar oportunidades de optimización en la gestión de recursos y la intermediación comercial. Apoyamos a la dirección ejecutiva en la planificación y organización comercial, transformando datos complejos en indicadores de gestión precisos. Nuestro enfoque está estrictamente orientado a la generación de valor y a la sostenibilidad de la ventaja competitiva de la organización.",
           "bullets": [
-            "Desarrollo de planes de viabilidad y negocio.",
-            "Auditoría organizativa y mejora de procesos.",
-            "Asesoramiento en gestión administrativa y directiva."
+            "Planes de viabilidad y estudios de rentabilidad económica.",
+            "Auditoría de procesos y optimización organizativa.",
+            "Asesoramiento estratégico para la dirección general."
           ]
         },
         "inmobiliaria": {
-          "titulo": "Gestión Inmobiliaria Corporativa",
-          "parrafo_1": "Ofrecemos una gestión integral de la propiedad inmobiliaria, abarcando desde la adquisición y tenencia hasta la explotación y comercialización de todo tipo de activos. Nuestro equipo experto administra de forma altamente eficiente patrimonios y carteras inmobiliarias, maximizando su rendimiento económico a medio y largo plazo. Asesoramos en operaciones de compraventa, arrendamiento y promoción inmobiliaria aplicando un gran rigor analítico.",
-          "parrafo_2": "Elaboramos rigurosos informes y planes de explotación específicos diseñados para las dinámicas del mercado real estate. Nos encargamos de la intermediación profesional en operaciones complejas, asegurando la viabilidad legal y económica de cada transacción. Velamos por la correcta conservación, mantenimiento y rehabilitación de sus activos, protegiendo y revalorizando su inversión patrimonial en todo momento.",
+          "titulo": "Gestión de Activos Inmobiliarios",
+          "parrafo_1": "Gestionamos carteras inmobiliarias de forma integral, priorizando la rentabilidad y la conservación del valor patrimonial. Nuestro equipo técnico supervisa desde la adquisición y el arrendamiento hasta la explotación y desinversión de activos. Aplicamos un rigor analítico exhaustivo en cada fase del ciclo de vida del inmueble, asegurando que cada operación de compraventa o promoción se ajuste a los parámetros de mercado y a los objetivos estratégicos del cliente.",
+          "parrafo_2": "Elaboramos planes de explotación específicos y análisis de mercado para maximizar el rendimiento de los activos inmobiliarios corporativos. Como coordinadores profesionales, velamos por la viabilidad legal y técnica de las inversiones, gestionando de forma eficiente el mantenimiento y la rehabilitación de los inmuebles. Nuestro compromiso es la protección del patrimonio inmobiliario mediante una gestión activa, profesional y transparente.",
           "bullets": [
-            "Administración de carteras y activos inmobiliarios.",
-            "Intermediación en operaciones de compraventa.",
-            "Elaboración de planes de explotación rentables."
+            "Administración técnica de carteras inmobiliarias.",
+            "Análisis de inversión y planes de explotación de activos.",
+            "Supervisión de operaciones de adquisición y desinversión."
           ]
         }
       },
       "cta_final": {
-        "titulo": "¿Necesita impulsar el crecimiento de su empresa?",
-        "subtitulo": "Nuestros expertos están a su disposición para diseñar la estrategia óptima."
+        "titulo": "¿Requiere un Análisis Técnico de su Situación?",
+        "subtitulo": "Nuestros consultores están a su disposición para realizar una evaluación preliminar de sus activos y estructura societaria."
       }
     },
     "sobre_nosotros": {
       "seo": {
-        "titulo": "Sobre Nosotros | Advance Lexar - Excelencia y Visión Estratégica",
-        "descripcion": "Conozca los valores, la trayectoria y el modelo de trabajo que nos posicionan como su firma consultora de confianza."
+        "titulo": "Sobre Advance Lexar | Filosofía y Modelo de Gestión",
+        "descripcion": "Conozca los principios de rigor, excelencia y profesionalidad que definen la actuación estratégica de Advance Lexar."
       },
       "cabecera": {
-        "badge": "Nuestra Firma",
-        "titulo": "Filosofía y Excelencia",
-        "subtitulo": "Conozca los valores, la trayectoria y el modelo de trabajo que nos posicionan como su firma consultora de confianza."
+        "badge": "La Firma",
+        "titulo": "Visión Estratégica y Rigor Técnico",
+        "subtitulo": "Nos definimos por la excelencia en la ejecución y un compromiso inquebrantable con la confidencialidad y la defensa de los intereses de nuestros clientes."
       },
       "historia": {
-        "titulo": "Excelencia y Visión Estratégica Corporativa",
-        "parrafo_1": "Advance Lexar nace con la firme vocación de ofrecer un servicio de consultoría de élite, capaz de dar respuesta a los complejos desafíos de un tejido empresarial en constante evolución. Desde nuestros inicios, nos hemos guiado por un principio inquebrantable: el rigor absoluto en el análisis documental y la ejecución estratégica. Nuestra firma se apoya en profesionales con una profunda comprensión del entorno normativo, económico e inmobiliario. Nos motiva el compromiso de crear una plataforma integral que trascienda la consultoría tradicional, aportando seguridad y un verdadero valor añadido a cada cliente.",
-        "parrafo_2": "A lo largo de nuestra trayectoria, hemos consolidado un enfoque diferencial fuertemente basado en la anticipación preventiva. No nos limitamos a resolver los conflictos presentes; diseñamos estructuras organizativas, societarias y legales preparadas para los retos del futuro. Esta visión a largo plazo nos ha permitido forjar relaciones de plena confianza con empresas y patrimonios que delegan en nuestro criterio la toma de decisiones críticas.",
-        "parrafo_3": "Miramos al futuro asumiendo el compromiso de mantener y elevar nuestros elevados estándares de calidad técnica. Continuaremos apostando por metodologías eficientes para garantizar que Advance Lexar siga siendo sinónimo de confidencialidad, rentabilidad y máxima protección empresarial."
+        "titulo": "Excelencia en Consultoría Corporativa",
+        "parrafo_1": "Advance Lexar nace con el objetivo de proporcionar un servicio de consultoría técnica de élite, adaptado a las exigencias de un entorno económico complejo y en constante transformación. Nuestra actuación se rige por el rigor analítico y la precisión estratégica. Contamos con una estructura preparada para abordar la gestión de activos, el cumplimiento normativo y la consultoría estratégica con la máxima solvencia. Nos distingue el compromiso con el valor añadido y la seguridad jurídica en cada intervención.",
+        "parrafo_2": "A lo largo de nuestra trayectoria, hemos consolidado un modelo de servicio basado en la anticipación proactiva. No nos limitamos a la gestión de situaciones presentes; diseñamos arquitecturas societarias y operativas que minimizan riesgos futuros y aseguran la estabilidad de la organización. Esta visión nos permite establecer relaciones de confianza a largo plazo con empresas y patrimonios que requieren un criterio profesional independiente y riguroso para la toma de decisiones.",
+        "parrafo_3": "De cara al futuro, mantenemos nuestra exigencia técnica y el compromiso con los estándares de calidad más elevados. Advance Lexar continuará evolucionando para seguir siendo el referente en confidencialidad, rentabilidad y blindaje estratégico para sus clientes."
       },
       "modelo": {
         "titulo": "Modelo de Coordinación Profesional",
-        "subtitulo": "Coordinación e Intermediación Especializada",
-        "parrafo_1": "La actual complejidad de los mercados exige soluciones técnicas multidisciplinares. En Advance Lexar hemos desarrollado un sofisticado y eficiente modelo de coordinación profesional. Cuando los requerimientos del proyecto exigen la intervención de profesionales colegiados sujetos a normativas especiales, actuamos diligentemente como una sociedad de intermediación. Garantizamos así el estricto cumplimiento de la Ley 2/2007 de sociedades profesionales, asegurando la máxima calidad sin mermar la agilidad del proceso.",
-        "parrafo_2": "Este modelo organizativo nos permite centralizar la dirección estratégica corporativa mientras orquestamos a los mejores especialistas para cada disciplina. Nuestros clientes se benefician de un único interlocutor de confianza que supervisa, coordina y asegura la absoluta coherencia de todas las acciones legales, económicas e inmobiliarias.",
+        "subtitulo": "Gestión Integral y Enfoque Multidisciplinar",
+        "parrafo_1": "La gestión de problemas complejos requiere una respuesta coordinada entre diferentes áreas del conocimiento técnico. Advance Lexar ha implementado un modelo de coordinación profesional sofisticado que centraliza la dirección estratégica del proyecto. En aquellas actuaciones que precisan la intervención de profesionales colegiados, actuamos diligentemente bajo un modelo de intermediación, garantizando en todo momento el cumplimiento de la Ley 2/2007 de sociedades profesionales.",
+        "parrafo_2": "Este esquema organizativo asegura a nuestros clientes la ventaja de contar con un único interlocutor estratégico que supervisa y garantiza la coherencia técnica de todas las acciones ejecutadas. Centralizamos la complejidad para ofrecer soluciones claras, verificadas y orientadas a la consecución de resultados tangibles.",
         "compromisos": [
-          "Confidencialidad y discreción absoluta en el manejo de información.",
-          "Transparencia y rigor en todos los procesos de intermediación.",
-          "Cumplimiento normativo estricto y actualización jurídica constante.",
-          "Compromiso inquebrantable con la protección de los intereses del cliente."
+          "Confidencialidad absoluta en el tratamiento de la información estratégica.",
+          "Rigor técnico y transparencia en los procesos de coordinación.",
+          "Actualización constante en marcos normativos y tendencias de mercado.",
+          "Defensa incondicional de los intereses patrimoniales y corporativos del cliente."
         ]
       },
       "cta_final": {
-        "titulo": "Cimentando el futuro de su empresa",
-        "subtitulo": "Nuestra máxima es la confidencialidad absoluta, el rigor académico y la orientación a resultados tangibles."
+        "titulo": "Cimentamos el Futuro de su Organización",
+        "subtitulo": "Nuestra metodología se basa en el rigor técnico, la discreción absoluta y la orientación a resultados de negocio."
       }
     },
     "contacto": {
       "seo": {
-        "titulo": "Contacto | Advance Lexar - Consultoría Estratégica",
-        "descripcion": "Póngase en contacto con Advance Lexar para recibir asesoramiento estratégico, consultoría legal y gestión corporativa rigurosa."
+        "titulo": "Contacto Profesional | Advance Lexar",
+        "descripcion": "Inicie una consulta técnica con Advance Lexar para recibir asesoramiento estratégico y gestión de activos profesional."
       },
       "cabecera": {
-        "badge": "Soporte Técnico",
+        "badge": "Consulta Técnica",
         "titulo": "Contacto y Asistencia",
-        "subtitulo": "Estamos a su entera disposición para resolver cualquier solicitud estratégica."
+        "subtitulo": "Estamos a su disposición para evaluar sus necesidades estratégicas y operativas."
       },
       "info_panel": {
         "titulo": "Advance Lexar",
-        "descripcion": "Consultoría de alto rendimiento enfocada a resultados. Agende una reunión presencial o remota con nuestros gestores."
+        "descripcion": "Consultoría de alto rendimiento orientada a la protección de intereses corporativos. Solicite una reunión con nuestra dirección técnica."
       },
       "formulario": {
-        "titulo": "Envíenos un comunicado",
-        "subtitulo": "Complete el formulario y el departamento designado evaluará su situación en las primeras 48 horas operativas."
+        "titulo": "Formulario de Consulta",
+        "subtitulo": "Remita su consulta y el departamento correspondiente realizará una evaluación preliminar en un plazo máximo de 48 horas operativas."
       }
     },
     "aviso_legal": {
       "seo": {
-        "titulo": "Aviso Legal | Advance Lexar - Consultoría",
-        "descripcion": "Información legal, términos de uso y datos registrales de Advance Lexar."
+        "titulo": "Aviso Legal | Advance Lexar",
+        "descripcion": "Términos de uso, datos registrales e información legal de Advance Lexar."
       },
       "cabecera": {
         "badge": "Legal",
@@ -160,7 +160,7 @@
     "politica_privacidad": {
       "seo": {
         "titulo": "Política de Privacidad | Advance Lexar",
-        "descripcion": "Información detallada sobre el tratamiento de sus datos personales y sus derechos (RGPD)."
+        "descripcion": "Información detallada sobre el tratamiento de datos personales conforme al RGPD."
       },
       "cabecera": {
         "badge": "Legal",
@@ -170,7 +170,7 @@
     "politica_cookies": {
       "seo": {
         "titulo": "Política de Cookies | Advance Lexar",
-        "descripcion": "Información sobre el uso de cookies y tecnologías similares en nuestro sitio web."
+        "descripcion": "Uso de cookies y tecnologías de análisis en el sitio web de Advance Lexar."
       },
       "cabecera": {
         "badge": "Legal",
@@ -181,18 +181,18 @@
   "legal": {
     "aviso_legal": {
       "razon_social": "ADVANCE LEXAR 20, S.L.",
-      "nif": "[Pendiente de rellenar]",
+      "nif": "B67856392",
       "direccion": "Calle de Francisco Silvela, 110, planta 2, 28002 Madrid",
       "email": "contacto@advancelexar.com",
-      "datos_registrales": "[Pendiente de rellenar tras la elevación a público del acta]"
+      "datos_registrales": "Tomo 46027 , Folio 80, Sección 8, Hoja M 808793, Inscripción/Anotación 1 ( 5.12.23)"
     },
     "privacidad": {
       "dpo_contacto": "Calle de Francisco Silvela, 110, planta 2, 28002 Madrid / contacto@advancelexar.com",
-      "plazo_conservacion": "5 años desde la finalización de la relación contractual o conforme a plazos legales de prescripción.",
+      "plazo_conservacion": "5 años tras la finalización del servicio o según plazos legales de prescripción aplicables.",
       "email_arco": "contacto@advancelexar.com"
     },
     "cookies": {
-      "detalles_analisis": "Google Analytics 4 (GA4) de carácter estadístico y anónimo, y cookies técnicas propias estrictamente necesarias para la navegación y envío de formularios."
+      "detalles_analisis": "Utilizamos Google Analytics 4 (GA4) con fines estadísticos y anónimos, además de cookies técnicas esenciales para la operatividad del sitio y la gestión de envíos."
     }
   }
 }

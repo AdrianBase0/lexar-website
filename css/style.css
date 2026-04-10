@@ -240,6 +240,10 @@ header {
   align-items: center;
 }
 
+.logo-wordmark span {
+  color: var(--color-arrow-bot);
+}
+
 /* Fallback texto (footer) */
 .logo-text {
   font-family: var(--font-headings);
