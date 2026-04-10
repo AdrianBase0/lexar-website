@@ -22,7 +22,7 @@ $global_content = $content['global'] ?? [];
         </div>
     </footer>
 
-    <?php include 'components/construction_modal.php'; ?>
+    <?php include __DIR__ . '/construction_modal.php'; ?>
 
     <script src="js/main.js"></script>
 </body>

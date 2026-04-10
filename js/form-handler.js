@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Reset general
             clearErrors();
-            feedbackBox.className = "form-feedback";
+            feedbackBox.className = "form-feedback-pill"; // reset a clase neutra
             feedbackBox.textContent = "";
             feedbackBox.style.display = "none";
             
@@ -133,12 +133,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function throwGlobalError(msg) {
         feedbackBox.textContent = msg;
-        feedbackBox.className = "form-feedback error";
+        feedbackBox.style.display = "block";
+        feedbackBox.className = "form-feedback-pill feedback-error";
     }
 
     function showSuccess(msg) {
         feedbackBox.textContent = msg;
-        feedbackBox.className = "form-feedback success";
+        feedbackBox.style.display = "block";
+        feedbackBox.className = "form-feedback-pill feedback-success";
     }
 
     function loaderUI(isLoading) {

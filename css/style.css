@@ -790,15 +790,30 @@ textarea.form-control {
   visibility: hidden !important;
 }
 
-/* Feedback DOM Injection */
-.form-feedback {
-  margin-bottom: 1.5rem;
+/* Feedback tras envío del formulario (aparece debajo del botón) */
+.form-feedback-pill {
+  display: none;
+  margin-top: 1.5rem;
   padding: 1rem 1.5rem;
   border-radius: var(--radius-sm);
-  display: none;
   font-weight: 600;
+  font-size: 0.95rem;
+  line-height: 1.5;
   animation: fadeIn 0.4s ease;
 }
+.feedback-success {
+  display: block;
+  background: #e0f2e9;
+  color: #1e5a3a;
+  border: 1px solid #a8d5b5;
+}
+.feedback-error {
+  display: block;
+  background: #fae6e6;
+  color: #9c2b2e;
+  border: 1px solid #f2c7c7;
+}
+/* Mantener compatibilidad con clases antiguas */
 .form-feedback.success { display: block; background: #e0f2e9; color: #1e5a3a; border: 1px solid #c0e6ce; }
 .form-feedback.error { display: block; background: #fae6e6; color: #9c2b2e; border: 1px solid #f2c7c7; }
 
